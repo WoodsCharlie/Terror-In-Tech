@@ -26,6 +26,9 @@ public class enemy : MonoBehaviour
         if (GameObj.name == collision.collider.name){
             return;
         }
-        Destroy(gameObject);
+        if (collision.collider.name == "Player")
+        {
+            Destroy(gameObject);
+        }
     }
 }
