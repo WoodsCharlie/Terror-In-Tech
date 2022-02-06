@@ -7,6 +7,8 @@ public class Player : MonoBehaviour
     private Rigidbody2D rigidBody;
 
     public float EnginePower = 3;
+    public float health;
+    public float currency;
 
     // Start is called before the first frame update
     void Start()
@@ -41,7 +43,19 @@ public class Player : MonoBehaviour
             transform.position = new Vector3(transform.position.x, 4.45f , transform.position.z);
         }
 
+        TurnToMouse();
         //rigidBody.angularVelocity = RotateSpeed * Input.GetAxis("Rotate");
 
+    }
+
+    void TurnToMouse()
+    {
+        Vector3 mouse_pos = Input.mousePosition;
+        mouse_pos.z = 10;
+        Vector3 object_pos = Camera.main.WorldToScreenPoint(transform.position);
+        mouse_pos.x = mouse_pos.x - object_pos.x;
+        mouse_pos.y = mouse_pos.y - object_pos.y;
+        float angle = Mathf.Atan2(mouse_pos.y, mouse_pos.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
     }
 }
