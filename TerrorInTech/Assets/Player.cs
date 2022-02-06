@@ -30,19 +30,7 @@ public class Player : MonoBehaviour
 
         rigidBody.velocity = (EnginePower * vect);
 
-        if (transform.position.x < -8.4){
-            transform.position = new Vector3(-8.4f, transform.position.y , transform.position.z);
-        }
-        if (transform.position.x > 8.4){
-            transform.position = new Vector3(8.4f, transform.position.y , transform.position.z);
-        }
-        if (transform.position.y < -4.45){
-            transform.position = new Vector3(transform.position.x, -4.45f , transform.position.z);
-        }
-        if (transform.position.y > 4.45){
-            transform.position = new Vector3(transform.position.x, 4.45f , transform.position.z);
-        }
-
+        
         TurnToMouse();
         //rigidBody.angularVelocity = RotateSpeed * Input.GetAxis("Rotate");
 
