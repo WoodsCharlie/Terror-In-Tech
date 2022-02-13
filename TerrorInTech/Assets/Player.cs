@@ -7,9 +7,9 @@ public class Player : MonoBehaviour
 {
     private Rigidbody2D rigidBody;
 
-    private float speed;
-    private float power;
-    private float currency;
+    private int speed;
+    private int power;
+    private int currency;
 
     public Text currencyText;
     public Text speedText;
@@ -23,11 +23,13 @@ public class Player : MonoBehaviour
         shopButton.gameObject.SetActive(false);
 
         rigidBody = GetComponent<Rigidbody2D>();
-        
+
         if (PlayerPrefs.GetInt("gameStarted") == 0)
+        {
             PlayerPrefs.SetInt("speed", 3);
             PlayerPrefs.SetInt("power", 1);
             PlayerPrefs.SetInt("currency", 100);
+        }
 
         speed = PlayerPrefs.GetInt("speed");
         power = PlayerPrefs.GetInt("power");
@@ -35,6 +37,7 @@ public class Player : MonoBehaviour
 
         speedText.text = "speed: " + speed.ToString();
         powerText.text = "power: " + power.ToString();
+        currencyText.text = "currency: " + currency.ToString();
 
         PlayerPrefs.SetInt("gameStarted", 1);
     }
