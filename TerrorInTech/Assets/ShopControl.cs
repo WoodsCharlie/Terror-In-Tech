@@ -21,6 +21,10 @@ public class ShopControl : MonoBehaviour
     void Start()
     {
         currency = PlayerPrefs.GetInt("currency");
+        if (PlayerPrefs.GetInt("speedCost") == 0)
+            PlayerPrefs.SetInt("speedCost", 5);
+        if (PlayerPrefs.GetInt("powerCost") == 0)
+            PlayerPrefs.SetInt("powerCost", 5);
     }
 
     // Update is called once per frame
