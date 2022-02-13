@@ -23,11 +23,10 @@ public class Player : MonoBehaviour
         shopButton.gameObject.SetActive(false);
 
         rigidBody = GetComponent<Rigidbody2D>();
-        if (PlayerPrefs.GetInt("speed") == 0)
+        
+        if (PlayerPrefs.GetInt("gameStarted") == 0)
             PlayerPrefs.SetInt("speed", 3);
-        if (PlayerPrefs.GetInt("power") == 0)
             PlayerPrefs.SetInt("power", 1);
-        if (PlayerPrefs.GetInt("currency") == 0)
             PlayerPrefs.SetInt("currency", 100);
 
         speed = PlayerPrefs.GetInt("speed");
@@ -36,6 +35,8 @@ public class Player : MonoBehaviour
 
         speedText.text = "speed: " + speed.ToString();
         powerText.text = "power: " + power.ToString();
+
+        PlayerPrefs.SetInt("gameStarted", 1);
     }
 
     // Update is called once per frame
