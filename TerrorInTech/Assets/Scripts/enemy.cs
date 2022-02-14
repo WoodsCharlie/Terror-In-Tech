@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class enemy : MonoBehaviour
 {
-    public float speed = 0.005f;
+    public float speed = 0.03f;
     public Transform Player;
 
     // Start is called before the first frame update
@@ -14,7 +14,7 @@ public class enemy : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
 
         transform.position = Vector3.MoveTowards(transform.position, Player.position, speed);
@@ -26,7 +26,7 @@ public class enemy : MonoBehaviour
         if (GameObj.name == collision.collider.name){
             return;
         }
-        if (collision.collider.name == "Player")
+        if (collision.collider.name == "Player" || collision.collider.name == "Bullet(Clone)")
         {
             Destroy(gameObject);
         }

@@ -69,7 +69,7 @@ public class Player : MonoBehaviour
         Vector3 object_pos = Camera.main.WorldToScreenPoint(transform.position);
         mouse_pos.x = mouse_pos.x - object_pos.x;
         mouse_pos.y = mouse_pos.y - object_pos.y;
-        float angle = Mathf.Atan2(mouse_pos.y, mouse_pos.x) * Mathf.Rad2Deg;
+        float angle = Mathf.Atan2(mouse_pos.y, mouse_pos.x) * Mathf.Rad2Deg - 90f;
         transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
     }
 
