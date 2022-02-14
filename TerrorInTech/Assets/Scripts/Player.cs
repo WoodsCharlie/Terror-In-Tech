@@ -1,19 +1,45 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
     private Rigidbody2D rigidBody;
 
-    public float EnginePower = 3;
-    public float health;
-    public float currency;
+    private int speed;
+    private int power;
+    private int currency;
+
+    public Text currencyText;
+    public Text speedText;
+    public Text powerText;
+
+    public Button shopButton;
 
     // Start is called before the first frame update
     void Start()
     {
-        rigidBody = GetComponent<Rigidbody2D>();    
+        shopButton.gameObject.SetActive(false);
+
+        rigidBody = GetComponent<Rigidbody2D>();
+
+        if (PlayerPrefs.GetInt("gameStarted") == 0)
+        {
+            PlayerPrefs.SetInt("speed", 3);
+            PlayerPrefs.SetInt("power", 1);
+            PlayerPrefs.SetInt("currency", 100);
+        }
+
+        speed = PlayerPrefs.GetInt("speed");
+        power = PlayerPrefs.GetInt("power");
+        currency = PlayerPrefs.GetInt("currency");
+
+        speedText.text = "speed: " + speed.ToString();
+        powerText.text = "power: " + power.ToString();
+        currencyText.text = "currency: " + currency.ToString();
+
+        PlayerPrefs.SetInt("gameStarted", 1);
     }
 
     // Update is called once per frame
@@ -23,16 +49,18 @@ public class Player : MonoBehaviour
     }
     void FixedUpdate()
     {
+        currencyText.text = "currency: " + currency.ToString();
+
         var horizAxis = Input.GetAxis("Horizontal");
         var vertAxis = Input.GetAxis("Vertical");
 
         var vect = new Vector2(horizAxis, vertAxis);        
 
-        rigidBody.velocity = (EnginePower * vect);
+        rigidBody.velocity = (speed * vect);
 
-        
         TurnToMouse();
         //rigidBody.angularVelocity = RotateSpeed * Input.GetAxis("Rotate");
+
 
     }
 
@@ -45,5 +73,17 @@ public class Player : MonoBehaviour
         mouse_pos.y = mouse_pos.y - object_pos.y;
         float angle = Mathf.Atan2(mouse_pos.y, mouse_pos.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.name == "Store")
+            shopButton.gameObject.SetActive(true);  
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.name == "Store")
+            shopButton.gameObject.SetActive(false);
     }
 }
