@@ -60,8 +60,6 @@ public class Player : MonoBehaviour
 
         TurnToMouse();
         //rigidBody.angularVelocity = RotateSpeed * Input.GetAxis("Rotate");
-
-
     }
 
     void TurnToMouse()
