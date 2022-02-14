@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
 {
     private Rigidbody2D rigidBody;
 
+    private int health;
     private int speed;
     private int power;
     private int currency;
@@ -20,17 +21,22 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        transform.position = new Vector2(PlayerPrefs.GetFloat("player x"), PlayerPrefs.GetFloat("player y"));
+
         shopButton.gameObject.SetActive(false);
 
         rigidBody = GetComponent<Rigidbody2D>();
 
         if (PlayerPrefs.GetInt("gameStarted") == 0)
         {
+            PlayerPrefs.SetInt("total health", 10);
+            PlayerPrefs.SetInt("health", 10);
             PlayerPrefs.SetInt("speed", 3);
             PlayerPrefs.SetInt("power", 1);
             PlayerPrefs.SetInt("currency", 100);
         }
 
+        health = PlayerPrefs.GetInt("health");
         speed = PlayerPrefs.GetInt("speed");
         power = PlayerPrefs.GetInt("power");
         currency = PlayerPrefs.GetInt("currency");
@@ -42,11 +48,6 @@ public class Player : MonoBehaviour
         PlayerPrefs.SetInt("gameStarted", 1);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     void FixedUpdate()
     {
         currencyText.text = "currency: " + currency.ToString();
@@ -60,6 +61,9 @@ public class Player : MonoBehaviour
 
         TurnToMouse();
         //rigidBody.angularVelocity = RotateSpeed * Input.GetAxis("Rotate");
+
+        PlayerPrefs.SetFloat("player y", transform.position.y);
+        PlayerPrefs.SetFloat("player x", transform.position.x);
     }
 
     void TurnToMouse()
@@ -76,7 +80,9 @@ public class Player : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.name == "Store")
-            shopButton.gameObject.SetActive(true);  
+            shopButton.gameObject.SetActive(true);
+        if (collision.gameObject.name == "Enemy")
+            health -= PlayerPrefs.GetInt("enemy damage");
     }
 
     private void OnCollisionExit2D(Collision2D collision)

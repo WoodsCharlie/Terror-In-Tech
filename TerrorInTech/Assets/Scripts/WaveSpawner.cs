@@ -24,7 +24,7 @@ public class WaveSpawner : MonoBehaviour
 
 	public Transform[] spawnPoints;
 
-	public float timeBetweenWaves = 5f;
+	public float timeBetweenWaves = 10f;
 	private float waveCountdown;
 	public float WaveCountdown
 	{
@@ -47,6 +47,7 @@ public class WaveSpawner : MonoBehaviour
 		}
 
 		waveCountdown = timeBetweenWaves;
+		PlayerPrefs.SetFloat("waveCountdown", waveCountdown);
 	}
 
 	void Update()
@@ -73,6 +74,7 @@ public class WaveSpawner : MonoBehaviour
 		else
 		{
 			waveCountdown -= Time.deltaTime;
+			PlayerPrefs.SetFloat("waveCountdown", waveCountdown);
 		}
 	}
 

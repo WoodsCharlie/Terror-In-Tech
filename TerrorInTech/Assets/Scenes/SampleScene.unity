@@ -3151,7 +3151,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1943993154}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.003, y: 16.335, z: 0}
+  m_LocalPosition: {x: -0.003, y: 16.3565, z: 0}
   m_LocalScale: {x: 23.253553, y: 17.712988, z: 1}
   m_Children: []
   m_Father: {fileID: 1146376645}
@@ -3467,7 +3467,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2096819637}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.145, y: 0.219, z: 0}
+  m_LocalPosition: {x: 0.145, y: 0.25, z: 0}
   m_LocalScale: {x: 26.098448, y: 5.950653, z: 1}
   m_Children: []
   m_Father: {fileID: 1146376645}
@@ -3706,7 +3706,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8742765267680899470, guid: 8ea57c66de2e2164ba165520a8606b66, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 8742765267680899470, guid: 8ea57c66de2e2164ba165520a8606b66, type: 3}
       propertyPath: m_LocalRotation.x
@@ -3718,7 +3718,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8742765267680899470, guid: 8ea57c66de2e2164ba165520a8606b66, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 8742765267680899470, guid: 8ea57c66de2e2164ba165520a8606b66, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3730,7 +3730,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8742765267680899470, guid: 8ea57c66de2e2164ba165520a8606b66, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8742765267680899471, guid: 8ea57c66de2e2164ba165520a8606b66, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8742765267680899471, guid: 8ea57c66de2e2164ba165520a8606b66, type: 3}
+      propertyPath: m_FlipY
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8742765267680899474, guid: 8ea57c66de2e2164ba165520a8606b66, type: 3}
       propertyPath: m_Name

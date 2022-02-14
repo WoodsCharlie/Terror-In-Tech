@@ -10,7 +10,8 @@ public class FollowPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        camera_offset = transform.position - player.transform.position;
+        var zeros = new Vector3(0, 0, 0);
+        camera_offset = transform.position - zeros;
     }
 
     // Update is called once per frame
