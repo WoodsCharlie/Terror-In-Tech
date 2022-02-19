@@ -9,12 +9,11 @@ public class Player : MonoBehaviour
 
     private int health;
     private int speed;
-    private int power;
     private int currency;
 
     public Text currencyText;
     public Text speedText;
-    public Text powerText;
+    public Text healthText;
 
     public Button shopButton;
 
@@ -32,17 +31,13 @@ public class Player : MonoBehaviour
             PlayerPrefs.SetInt("total health", 10);
             PlayerPrefs.SetInt("health", 10);
             PlayerPrefs.SetInt("speed", 3);
-            PlayerPrefs.SetInt("power", 1);
             PlayerPrefs.SetInt("currency", 100);
         }
 
-        health = PlayerPrefs.GetInt("health");
         speed = PlayerPrefs.GetInt("speed");
-        power = PlayerPrefs.GetInt("power");
         currency = PlayerPrefs.GetInt("currency");
 
         speedText.text = "speed: " + speed.ToString();
-        powerText.text = "power: " + power.ToString();
         currencyText.text = "currency: " + currency.ToString();
 
         PlayerPrefs.SetInt("gameStarted", 1);
@@ -64,6 +59,7 @@ public class Player : MonoBehaviour
 
         PlayerPrefs.SetFloat("player y", transform.position.y);
         PlayerPrefs.SetFloat("player x", transform.position.x);
+        PlayerPrefs.SetInt("health", health);
     }
 
     void TurnToMouse()

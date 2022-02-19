@@ -8,14 +8,14 @@ public class ShopControl : MonoBehaviour
 {
     int currency;
     int speedCost;
-    int powerCost;
+    int healthCost;
 
     public Text currencyText;
     public Text speedText;
-    public Text powerText;
+    public Text healthText;
 
     public Button speedButton;
-    public Button powerButton;
+    public Button healthButton;
 
     // Start is called before the first frame update
     void Start()
@@ -23,28 +23,28 @@ public class ShopControl : MonoBehaviour
         currency = PlayerPrefs.GetInt("currency");
         if (PlayerPrefs.GetInt("speedCost") == 0)
             PlayerPrefs.SetInt("speedCost", 5);
-        if (PlayerPrefs.GetInt("powerCost") == 0)
-            PlayerPrefs.SetInt("powerCost", 5);
+        if (PlayerPrefs.GetInt("healthCost") == 0)
+            PlayerPrefs.SetInt("healthCost", 5);
     }
 
     // Update is called once per frame
     void Update()
     {
         speedCost = PlayerPrefs.GetInt("speedCost");
-        powerCost = PlayerPrefs.GetInt("powerCost");
+        healthCost = PlayerPrefs.GetInt("healthCost");
 
         currencyText.text = "bank: $" + currency.ToString();
         speedText.text = speedCost.ToString() + ".";
-        powerText.text = powerCost.ToString() + ".";
+        healthText.text = healthCost.ToString() + ".";
 
         if (currency >= speedCost)
             speedButton.interactable = true;
         else
             speedButton.interactable = false;
-        if (currency >= powerCost)
-            powerButton.interactable = true;
+        if (currency >= healthCost)
+            healthButton.interactable = true;
         else
-            powerButton.interactable = false;
+            healthButton.interactable = false;
     }
 
     public void buySpeed()
@@ -54,11 +54,11 @@ public class ShopControl : MonoBehaviour
         PlayerPrefs.SetInt("speed", PlayerPrefs.GetInt("speed") + 1);
     }
 
-    public void buyPower()
+    public void buyhealth()
     {
-        currency -= powerCost;
-        PlayerPrefs.SetInt("powerCost", powerCost + 5);
-        PlayerPrefs.SetInt("power", PlayerPrefs.GetInt("power") + 1);
+        currency -= healthCost;
+        PlayerPrefs.SetInt("healthCost", healthCost + 5);
+        PlayerPrefs.SetInt("health", PlayerPrefs.GetInt("health") + 1);
     }
 
     public void exitShop()
