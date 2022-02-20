@@ -16,8 +16,8 @@ public class enemy : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        TurnToPlayer();
         transform.position = Vector3.MoveTowards(transform.position, Player.position, speed);
+        TurnToPlayer();
     }
 
     void TurnToPlayer()
@@ -29,6 +29,14 @@ public class enemy : MonoBehaviour
 
         float angle = Mathf.Atan2(player_pos.y, player_pos.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+
+        if (player_pos.x < 0)
+            {
+            transform.localScale = new Vector3(0.175f,-0.175f,1);
+        }
+        else{
+            transform.localScale = new Vector3(0.175f,0.175f,1);
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
