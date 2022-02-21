@@ -10,12 +10,13 @@ ScriptsOnlyBuild:
     - ShopControl
     - StartGame
     - WaveSpawner
+    - ammo_manager
     - enemy
+    - ian_script
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
-    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -58,21 +59,21 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1540}
+      Script: {instanceID: 1522}
     - Class: 114
-      Script: {instanceID: 2278}
+      Script: {instanceID: 2260}
     - Class: 114
-      Script: {instanceID: 2704}
+      Script: {instanceID: 2688}
     - Class: 114
-      Script: {instanceID: 2876}
+      Script: {instanceID: 2860}
     - Class: 114
-      Script: {instanceID: 3114}
+      Script: {instanceID: 3098}
     - Class: 114
-      Script: {instanceID: 3360}
+      Script: {instanceID: 3344}
     - Class: 114
-      Script: {instanceID: 3480}
+      Script: {instanceID: 3464}
     - Class: 114
-      Script: {instanceID: 4894}
+      Script: {instanceID: 4882}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -117,37 +118,39 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1540}
+      Script: {instanceID: 1522}
     - Class: 114
-      Script: {instanceID: 1740}
+      Script: {instanceID: 1722}
     - Class: 114
-      Script: {instanceID: 1746}
+      Script: {instanceID: 1728}
     - Class: 114
-      Script: {instanceID: 2044}
+      Script: {instanceID: 2026}
     - Class: 114
-      Script: {instanceID: 2178}
+      Script: {instanceID: 2160}
     - Class: 114
-      Script: {instanceID: 2278}
+      Script: {instanceID: 2260}
     - Class: 114
-      Script: {instanceID: 2704}
+      Script: {instanceID: 2688}
     - Class: 114
-      Script: {instanceID: 2876}
+      Script: {instanceID: 2860}
     - Class: 114
-      Script: {instanceID: 3066}
+      Script: {instanceID: 3050}
     - Class: 114
-      Script: {instanceID: 3114}
+      Script: {instanceID: 3098}
     - Class: 114
-      Script: {instanceID: 3360}
+      Script: {instanceID: 3344}
     - Class: 114
-      Script: {instanceID: 3480}
+      Script: {instanceID: 4062}
     - Class: 114
-      Script: {instanceID: 4252}
+      Script: {instanceID: 4238}
     - Class: 114
-      Script: {instanceID: 5414}
+      Script: {instanceID: 4266}
     - Class: 114
-      Script: {instanceID: 5438}
+      Script: {instanceID: 5402}
     - Class: 114
-      Script: {instanceID: 5834}
+      Script: {instanceID: 5426}
+    - Class: 114
+      Script: {instanceID: 5822}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -184,21 +187,21 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1540}
+      Script: {instanceID: 1522}
     - Class: 114
-      Script: {instanceID: 2278}
+      Script: {instanceID: 2260}
     - Class: 114
-      Script: {instanceID: 2704}
+      Script: {instanceID: 2688}
     - Class: 114
-      Script: {instanceID: 2876}
+      Script: {instanceID: 2860}
     - Class: 114
-      Script: {instanceID: 3114}
+      Script: {instanceID: 3098}
     - Class: 114
-      Script: {instanceID: 3360}
+      Script: {instanceID: 3344}
     - Class: 114
-      Script: {instanceID: 3480}
+      Script: {instanceID: 3464}
     - Class: 114
-      Script: {instanceID: 5866}
+      Script: {instanceID: 5854}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -280,7 +283,7 @@ ScriptsOnlyBuild:
     className: Slider
   - hash:
       serializedVersion: 2
-      Hash: fc84a03622ebaf239673470ecaecfc1f
+      Hash: c078411ed4a2262f4f0bc6f84844abcb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: WaveSpawner
@@ -332,6 +335,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Text
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: bullet_script
   - hash:
       serializedVersion: 2
       Hash: f1d735cc1a21c3704ab52568f4fbfcf8
@@ -400,7 +409,7 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 36153e737e69093dd0e616bbf9f42a86
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Bullet
@@ -556,6 +565,12 @@ ScriptsOnlyBuild:
     className: PlayModeRunnerCallback
   - hash:
       serializedVersion: 2
+      Hash: 840183598f2d8d2832d4c7ef01e72579
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ammo_manager
+  - hash:
+      serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -586,10 +601,16 @@ ScriptsOnlyBuild:
     className: EventTrigger
   - hash:
       serializedVersion: 2
-      Hash: 9bdbcfbbfc2d1da7acba9cee89abd883
+      Hash: 5f3b9f7a971cdcfccc663deee08ed41e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: enemy
+  - hash:
+      serializedVersion: 2
+      Hash: 7d01bb28e87ce6d6395bb3fb946afcd0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ian_script
   - hash:
       serializedVersion: 2
       Hash: 87cef3c82381dc586f6772c3e27561b6
@@ -736,7 +757,7 @@ ScriptsOnlyBuild:
     className: Initialization
   - hash:
       serializedVersion: 2
-      Hash: eaf3e23313e6ef5595ccc8b7bcb85bfb
+      Hash: 94b5dc16f72f37daf418583dd04c093b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
@@ -784,7 +805,7 @@ ScriptsOnlyBuild:
     className: MainButtonControls
   - hash:
       serializedVersion: 2
-      Hash: bf6769897875b93c0fd236e3849b803a
+      Hash: 9838a91db9afd08d36882e6ca34cddbe
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ShopControl
@@ -793,4 +814,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/IntroScreen.unity
   - Assets/Scenes/SampleScene.unity
   - Assets/Scenes/ShopScene.unity
-  playerPath: C:/Users/chrlw/Documents/School/CS_377/Terror In Tech/Terror-In-Tech/Builds/Windows/TerrorInTech.exe
+  playerPath: C:/Users/HP/Documents/GitHub/Terror-In-Tech/TerrorInTech/TerrorInTech.exe

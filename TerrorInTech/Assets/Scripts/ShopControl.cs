@@ -83,6 +83,11 @@ public class ShopControl : MonoBehaviour
             purple.interactable = true;
         else
             purple.interactable = false;
+
+        if (Input.GetKey(KeyCode.F))
+        {
+            SceneManager.LoadScene("SampleScene");
+        }
     }
 
     public void buySpeed()
