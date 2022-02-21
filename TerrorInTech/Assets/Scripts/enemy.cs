@@ -1,16 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class enemy : MonoBehaviour
 {
     public float speed = 0.03f;
     public Transform Player;
+    private bool hitPlayer;
+    private int health;
+    public GameObject coin;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        hitPlayer = false;
+        health = 1;
     }
 
     // Update is called once per frame
@@ -42,12 +48,24 @@ public class enemy : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         var GameObj = GetComponent<BoxCollider2D>();
-        if (GameObj.name == collision.collider.name){
+        if (GameObj.name == collision.collider.name) {
             return;
         }
-        if (collision.collider.name == "Player" || collision.collider.name == "Bullet(Clone)")
+        if (collision.collider.name == "Bullet(Clone)")
         {
-            Destroy(gameObject);
+            health -= 1;
+            if (health == 0)
+            {
+                //Instantiate(coin, transform.position, Quaternion.identity, transform.parent);
+                Destroy(gameObject);
+            }
+        }
+        if (collision.collider.name == "Player")
+            hitPlayer = true;
+
+        if (collision.collider.name == "Coin")
+        {
+            
         }
     }
 }

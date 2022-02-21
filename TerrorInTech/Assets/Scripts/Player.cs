@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -15,15 +16,12 @@ public class Player : MonoBehaviour
     public Text currencyText;
     public Text speedText;
     public Slider healthBar;
-
-    public Button shopButton;
+    public GameObject entershop;
 
     // Start is called before the first frame update
     void Start()
     {
         transform.position = new Vector2(PlayerPrefs.GetFloat("player x"), PlayerPrefs.GetFloat("player y"));
-
-        shopButton.gameObject.SetActive(false);
 
         rigidBody = GetComponent<Rigidbody2D>();
         mySpriteRend = GetComponent<SpriteRenderer>();
@@ -37,6 +35,7 @@ public class Player : MonoBehaviour
             PlayerPrefs.SetInt("speed", 3);
             PlayerPrefs.SetInt("currency", 100);
             PlayerPrefs.SetInt("enemy damage", 10);
+            PlayerPrefs.SetInt("ianHealth", 50);
         }
 
         speed = PlayerPrefs.GetInt("speed");
@@ -69,6 +68,32 @@ public class Player : MonoBehaviour
         float healthpercent = (float)health / (float)PlayerPrefs.GetInt("total health");
         int healthvalue = (int)(healthpercent * 100);
         healthBar.value = healthvalue;
+
+        // player selects which ammo they're using
+        if (Input.GetKey(KeyCode.Alpha1))
+            PlayerPrefs.SetInt("ammo_selection", 0);
+        if (Input.GetKey(KeyCode.Alpha2))
+            PlayerPrefs.SetInt("ammo_selection", 1);
+        if (Input.GetKey(KeyCode.Alpha3))
+            PlayerPrefs.SetInt("ammo_selection", 2);
+        if (Input.GetKey(KeyCode.Alpha4))
+            PlayerPrefs.SetInt("ammo_selection", 3);
+        if (Input.GetKey(KeyCode.Alpha5))
+            PlayerPrefs.SetInt("ammo_selection", 4);
+        if (Input.GetKey(KeyCode.Alpha6))
+            PlayerPrefs.SetInt("ammo_selection", 5);
+
+        // if between waves player can access shop
+        if (PlayerPrefs.GetInt("wave happening") == 1)
+        {
+            entershop.SetActive(true);
+            if (Input.GetKey(KeyCode.F))
+            {
+                SceneManager.LoadScene("ShopScene");
+            }
+        }
+        else
+            entershop.SetActive(false);
     }
 
     void TurnToMouse()
@@ -93,15 +118,7 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.name == "Store")
-            shopButton.gameObject.SetActive(true);
         if (collision.gameObject.name == "Enemy(Clone)")
             health -= PlayerPrefs.GetInt("enemy damage");
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.name == "Store")
-            shopButton.gameObject.SetActive(false);
     }
 }

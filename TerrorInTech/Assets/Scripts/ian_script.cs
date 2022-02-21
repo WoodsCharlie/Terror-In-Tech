@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ian_script : MonoBehaviour
 {
@@ -9,23 +10,24 @@ public class ian_script : MonoBehaviour
     public Sprite stage2;
     public Sprite stage3;
 
+    public Slider healthBar;
+
     // Start is called before the first frame update
     void Start()
     {
-        sr = GameObject.FindObjectOfType<SpriteRenderer>();
         sr.sprite = stage1;
-        if (PlayerPrefs.GetInt("gameStarted") == 0)
-        {
-            PlayerPrefs.SetInt("ianHealth", 50);
-        }
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (PlayerPrefs.GetInt("ianHealth") < 33)
             sr.sprite = stage2;
         if (PlayerPrefs.GetInt("ianHealth") < 17)
             sr.sprite = stage3;
+
+        float healthpercent = (float)PlayerPrefs.GetInt("ianHealth") / (float)50;
+        int healthvalue = (int)(healthpercent * 100);
+        healthBar.value = healthvalue;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

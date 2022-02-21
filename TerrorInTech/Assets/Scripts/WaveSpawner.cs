@@ -46,13 +46,13 @@ public class WaveSpawner : MonoBehaviour
 
 	void Start()
 	{
+		WaveCount = PlayerPrefs.GetInt("wave count");
 		if (spawnPoints.Length == 0)
 		{
 			Debug.LogError("No spawn points referenced.");
 		}
 
 		waveCountdown = timeBetweenWaves;
-		PlayerPrefs.SetFloat("waveCountdown", waveCountdown);
 	}
 
 	void Update()
@@ -81,13 +81,14 @@ public class WaveSpawner : MonoBehaviour
 			waveCountdown -= Time.deltaTime;
 			if (waveCountdown >= 0)
 			{
-				WaveCountdownText.text = "Time until next wave: " + ((int)waveCountdown).ToString();
+				WaveCountdownText.text = "time until next wave: " + ((int)waveCountdown).ToString();
+				PlayerPrefs.SetInt("wave happening", 1);
 			}
 			else
 			{
-				WaveCountdownText.text = "Time until next wave: 0";
+				WaveCountdownText.text = "time until next wave: 0";
+				PlayerPrefs.SetInt("wave happening", 0);
 			}
-			PlayerPrefs.SetFloat("waveCountdown", waveCountdown);
 		}
 	}
 
@@ -95,7 +96,6 @@ public class WaveSpawner : MonoBehaviour
 	{
 
 		state = SpawnState.COUNTING;
-		PlayerPrefs.SetInt("wave happening", 0);
 		waveCountdown = timeBetweenWaves;
 
 		if (nextWave + 1 > waves.Length - 1)
@@ -129,9 +129,9 @@ public class WaveSpawner : MonoBehaviour
 	IEnumerator SpawnWave(Wave _wave)
 	{
 		state = SpawnState.SPAWNING;
-		PlayerPrefs.SetInt("wave happening", 1);
 		WaveCount += 1;
-		WaveNumberText.text = "Wave Number: " + WaveCount.ToString();
+		PlayerPrefs.SetInt("wave count", WaveCount);
+		WaveNumberText.text = "wave number: " + WaveCount.ToString();
 
 		for (int i = 0; i < _wave.count; i++)
 		{
