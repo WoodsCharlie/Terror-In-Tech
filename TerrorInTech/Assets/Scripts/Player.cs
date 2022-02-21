@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
 
     public Text currencyText;
     public Text speedText;
-    public Text healthText;
+    public Slider healthBar;
 
     public Button shopButton;
 
@@ -32,12 +32,16 @@ public class Player : MonoBehaviour
         {
             PlayerPrefs.SetInt("total health", 10);
             PlayerPrefs.SetInt("health", 10);
+            PlayerPrefs.SetInt("total health", 100);
+            PlayerPrefs.SetInt("health", 100);
             PlayerPrefs.SetInt("speed", 3);
             PlayerPrefs.SetInt("currency", 100);
+            PlayerPrefs.SetInt("enemy damage", 10);
         }
 
         speed = PlayerPrefs.GetInt("speed");
         currency = PlayerPrefs.GetInt("currency");
+        health = 100;
 
         speedText.text = "speed: " + speed.ToString();
         currencyText.text = "currency: " + currency.ToString();
@@ -62,6 +66,9 @@ public class Player : MonoBehaviour
         PlayerPrefs.SetFloat("player y", transform.position.y);
         PlayerPrefs.SetFloat("player x", transform.position.x);
         PlayerPrefs.SetInt("health", health);
+        float healthpercent = (float)health / (float)PlayerPrefs.GetInt("total health");
+        int healthvalue = (int)(healthpercent * 100);
+        healthBar.value = healthvalue;
     }
 
     void TurnToMouse()
@@ -88,7 +95,7 @@ public class Player : MonoBehaviour
     {
         if (collision.gameObject.name == "Store")
             shopButton.gameObject.SetActive(true);
-        if (collision.gameObject.name == "Enemy")
+        if (collision.gameObject.name == "Enemy(Clone)")
             health -= PlayerPrefs.GetInt("enemy damage");
     }
 

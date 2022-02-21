@@ -1,9 +1,14 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class WaveSpawner : MonoBehaviour
 {
 	public Transform Player;
+	public Text WaveNumberText;
+	public Text WaveCountdownText;
+	private int WaveCount = 0;
 	public enum SpawnState { SPAWNING, WAITING, COUNTING };
 
 	[System.Serializable]
@@ -74,6 +79,14 @@ public class WaveSpawner : MonoBehaviour
 		else
 		{
 			waveCountdown -= Time.deltaTime;
+			if (waveCountdown >= 0)
+			{
+				WaveCountdownText.text = "Time until next wave: " + ((int)waveCountdown).ToString();
+			}
+			else
+			{
+				WaveCountdownText.text = "Time until next wave: 0";
+			}
 			PlayerPrefs.SetFloat("waveCountdown", waveCountdown);
 		}
 	}
@@ -82,14 +95,15 @@ public class WaveSpawner : MonoBehaviour
 	{
 
 		state = SpawnState.COUNTING;
+		PlayerPrefs.SetInt("wave happening", 0);
 		waveCountdown = timeBetweenWaves;
 
 		if (nextWave + 1 > waves.Length - 1)
 		{
-			for (int i = 0; i < waves.Length;i++)
-            {
+			for (int i = 0; i < waves.Length; i++)
+			{
 				waves[i].count += 5;
-            }
+			}
 			nextWave = 0;
 		}
 		else
@@ -115,6 +129,9 @@ public class WaveSpawner : MonoBehaviour
 	IEnumerator SpawnWave(Wave _wave)
 	{
 		state = SpawnState.SPAWNING;
+		PlayerPrefs.SetInt("wave happening", 1);
+		WaveCount += 1;
+		WaveNumberText.text = "Wave Number: " + WaveCount.ToString();
 
 		for (int i = 0; i < _wave.count; i++)
 		{
