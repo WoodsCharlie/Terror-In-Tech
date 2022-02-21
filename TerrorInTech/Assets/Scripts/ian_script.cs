@@ -28,6 +28,11 @@ public class ian_script : MonoBehaviour
         float healthpercent = (float)PlayerPrefs.GetInt("ianHealth") / (float)50;
         int healthvalue = (int)(healthpercent * 100);
         healthBar.value = healthvalue;
+
+        if (Input.GetKey(KeyCode.G))
+            PlayerPrefs.SetInt("ianHealth", 32);
+        if (Input.GetKey(KeyCode.H))
+            PlayerPrefs.SetInt("ianHealth", 16);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
