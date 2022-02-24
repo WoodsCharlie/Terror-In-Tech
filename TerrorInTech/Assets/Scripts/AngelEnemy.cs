@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class enemy : MonoBehaviour
+public class AngelEnemy : MonoBehaviour
 {
     public float speed = 0.03f;
     public Transform Player;
@@ -19,6 +19,7 @@ public class enemy : MonoBehaviour
         total_health = 3;
         health = total_health;
         Physics2D.IgnoreLayerCollision(6, 7);
+        Physics2D.IgnoreLayerCollision(6, 9);
     }
 
     // Update is called once per frame
@@ -39,18 +40,20 @@ public class enemy : MonoBehaviour
         transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
 
         if (player_pos.x < 0)
-            {
-            transform.localScale = new Vector3(0.175f,-0.175f,1);
+        {
+            transform.localScale = new Vector3(0.175f, -0.175f, 1);
         }
-        else{
-            transform.localScale = new Vector3(0.175f,0.175f,1);
+        else
+        {
+            transform.localScale = new Vector3(0.175f, 0.175f, 1);
         }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
         var GameObj = GetComponent<BoxCollider2D>();
-        if (GameObj.name == collision.collider.name) {
+        if (GameObj.name == collision.collider.name)
+        {
             return;
         }
         if (collision.collider.name == "Bullet(Clone)")
@@ -58,7 +61,7 @@ public class enemy : MonoBehaviour
             health -= 1;
 
             // change healthbar according to new player health
-            float new_x_scale = 3.0f * ((float)health/(float)total_health);
+            float new_x_scale = 3.0f * ((float)health / (float)total_health);
             float x_moved = (3 - new_x_scale) / 2f;
             var tf = healthbar.transform;
             tf.localScale = new Vector2(new_x_scale, 0.25f);

@@ -13,6 +13,9 @@ public class Player : MonoBehaviour
     private int speed;
     private int currency;
 
+    private bool invincible = false;
+    private float invincible_timer;
+
     public Text currencyText;
     public Text speedText;
     public Slider healthBar;
@@ -33,7 +36,6 @@ public class Player : MonoBehaviour
             PlayerPrefs.SetInt("total health", 100);
             PlayerPrefs.SetInt("health", 100);
             PlayerPrefs.SetInt("speed", 3);
-            PlayerPrefs.SetInt("currency", 100);
             PlayerPrefs.SetInt("enemy damage", 10);
             PlayerPrefs.SetInt("ianHealth", 50);
         }
@@ -65,6 +67,8 @@ public class Player : MonoBehaviour
         PlayerPrefs.SetFloat("player y", transform.position.y);
         PlayerPrefs.SetFloat("player x", transform.position.x);
         PlayerPrefs.SetInt("health", health);
+
+        // update healthbar
         float healthpercent = (float)health / (float)PlayerPrefs.GetInt("total health");
         int healthvalue = (int)(healthpercent * 100);
         healthBar.value = healthvalue;
@@ -94,6 +98,17 @@ public class Player : MonoBehaviour
         }
         else
             entershop.SetActive(false);
+
+        // making player invincible for half a second if they are hit by an enemy
+        if (invincible)
+        {
+            if (invincible_timer > 0)
+                invincible_timer -= Time.fixedDeltaTime;
+            else
+                invincible = false;
+        }
+        else
+            invincible_timer = 0.5f;
     }
 
     void TurnToMouse()
@@ -119,6 +134,23 @@ public class Player : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.name == "Enemy(Clone)")
-            health -= PlayerPrefs.GetInt("enemy damage");
+        {
+            if (!invincible)
+            {
+                health -= PlayerPrefs.GetInt("enemy damage");
+                invincible = true;
+            }
+        }
+        if (collision.gameObject.name == "Coin(Clone)")
+        {
+            currency += 1;
+            Destroy(collision.gameObject);
+        }
     }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+
+    }
+
 }

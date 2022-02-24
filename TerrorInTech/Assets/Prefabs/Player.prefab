@@ -106,7 +106,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 3.4, y: 2.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -235,8 +235,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currencyText: {fileID: 0}
   speedText: {fileID: 0}
-  powerText: {fileID: 0}
-  shopButton: {fileID: 0}
+  healthBar: {fileID: 0}
+  entershop: {fileID: 0}
 --- !u!58 &686082769
 CircleCollider2D:
   m_ObjectHideFlags: 0
