@@ -33,11 +33,10 @@ public class Player : MonoBehaviour
         {
             PlayerPrefs.SetInt("total health", 10);
             PlayerPrefs.SetInt("health", 10);
-            PlayerPrefs.SetInt("total health", 100);
-            PlayerPrefs.SetInt("health", 100);
             PlayerPrefs.SetInt("speed", 3);
-            PlayerPrefs.SetInt("enemy damage", 10);
-            PlayerPrefs.SetInt("ianHealth", 50);
+            PlayerPrefs.SetInt("enemy damage", 1);
+            PlayerPrefs.SetInt("ianHealth", 25);
+            PlayerPrefs.SetInt("total ianHealth", 25);
         }
 
         speed = PlayerPrefs.GetInt("speed");
@@ -148,7 +147,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void OnCollisionStay2D(Collision2D collision)
+    private void OnCollision2D(Collision2D collision)
     {
 
     }

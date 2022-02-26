@@ -17,7 +17,6 @@ public class ian_script : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlayerPrefs.SetInt("total ianHealth", 50);
         sr.sprite = stage1;
     }
 

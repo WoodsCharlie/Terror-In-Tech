@@ -7,21 +7,32 @@ public class WaveSpawner : MonoBehaviour
 {
 	public Transform Player;
 	public Transform Ian;
+
+	private int WaveCount = 0;
+	public float timeBetweenWaves = 10f;
+	private float waveCountdown;
 	public Text WaveNumberText;
 	public Text WaveCountdownText;
+
+	public GameObject waveOverText;
+	public Text wot;
+	public GameObject newSpawnpointsText;
+
 	public GameObject regDuck;
 	public GameObject ianDuck;
 	public GameObject ghostDuck;
-	public GameObject waveOverText;
-	public Text wot;
+
+	public GameObject tempDoor1;
+	public GameObject tempDoor2;
+
+	private int numBossFights = 0;
 	private float spawnRate = 1;
-	private int WaveCount = 0;
+
 	public enum SpawnState { SPAWNING, WAITING, COUNTING };
 
 	public Transform[] spawnPoints;
+	public Transform[] spawnPoints2;
 
-	public float timeBetweenWaves = 10f;
-	private float waveCountdown;
 	public float WaveCountdown
 	{
 		get { return waveCountdown; }
@@ -81,6 +92,12 @@ public class WaveSpawner : MonoBehaviour
 				PlayerPrefs.SetInt("wave happening", 0);
 			}
 		}
+
+		if (WaveCount == 6)
+        {
+			tempDoor1.SetActive(false);
+			tempDoor2.SetActive(false);
+        }
 	}
 
 	void WaveCompleted()
@@ -106,10 +123,17 @@ public class WaveSpawner : MonoBehaviour
 
 	IEnumerator showText()
     {
+		float waitTime = (2.5f);
+		if (WaveCount == 9)
+        {
+			newSpawnpointsText.SetActive(true);
+			waitTime = 7.5f;
+        }
 		wot.text = "WAVE " + WaveCount.ToString() + " OVER!";
 		waveOverText.SetActive(true);
-		yield return new WaitForSeconds(2.5f);
+		yield return new WaitForSeconds(waitTime);
 		waveOverText.SetActive(false);
+		newSpawnpointsText.SetActive(false);
 	}
 
 	IEnumerator SpawnWave()
@@ -121,9 +145,9 @@ public class WaveSpawner : MonoBehaviour
 
 		if (WaveCount <= 2)
         {
-			for (int i = 0; i < 4*WaveCount; i++)
+			for (int i = 0; i < 4 * WaveCount; i++)
             {
-				SpawnRegDuck();
+				SpawnRegDuck(spawnPoints);
 				yield return new WaitForSeconds(1f / spawnRate);
 			}
 		}
@@ -133,9 +157,9 @@ public class WaveSpawner : MonoBehaviour
 			spawnRate = 1.5f;
 			for (int i = 0; i < 2 * (WaveCount-1); i++)
 			{
-				SpawnRegDuck();
-				SpawnIanDuck();
-				SpawnRegDuck();
+				SpawnRegDuck(spawnPoints);
+				SpawnIanDuck(spawnPoints);
+				SpawnRegDuck(spawnPoints);
 				yield return new WaitForSeconds(1f / spawnRate);
 			}
 		}
@@ -143,13 +167,31 @@ public class WaveSpawner : MonoBehaviour
 		if (WaveCount >= 5)
 		{
 			spawnRate = 2.0f;
-			for (int i = 0; i < WaveCount; i++)
+			if (WaveCount % 5 == 0)
+			{
+				numBossFights += 1;
+				BossFight();
+			}
+            else
             {
-				SpawnRegDuck();
-				SpawnIanDuck();
-				SpawnGhostDuck();
-				SpawnRegDuck();
-				yield return new WaitForSeconds(1f / spawnRate);
+				for (int i = 0; i < WaveCount - numBossFights; i++)
+				{
+					if (WaveCount < 10)
+                    {
+						SpawnRegDuck(spawnPoints);
+						SpawnIanDuck(spawnPoints);
+						SpawnGhostDuck(spawnPoints);
+						SpawnRegDuck(spawnPoints);
+					}
+					else
+                    {
+						SpawnRegDuck(spawnPoints2);
+						SpawnIanDuck(spawnPoints2);
+						SpawnGhostDuck(spawnPoints2);
+						SpawnRegDuck(spawnPoints2);
+					}
+					yield return new WaitForSeconds(1f / spawnRate);
+				}
 			}				
 		}
 
@@ -157,25 +199,30 @@ public class WaveSpawner : MonoBehaviour
 		yield break;
 	}
 
-	void SpawnRegDuck()
+	void BossFight()
+    {
+
+    }
+
+	void SpawnRegDuck(Transform[] sp)
 	{
-		Transform _sp = spawnPoints[Random.Range(0, spawnPoints.Length)];
+		Transform _sp = sp[Random.Range(0, sp.Length)];
 		GameObject ene = Instantiate(regDuck, _sp.position, _sp.rotation);
 		enemy enemy_spawn = ene.GetComponent<enemy>();
 		enemy_spawn.Player = Player;
 	}
 
-	void SpawnIanDuck()
+	void SpawnIanDuck(Transform[] sp)
 	{
-		Transform _sp = spawnPoints[Random.Range(0, spawnPoints.Length)];
+		Transform _sp = sp[Random.Range(0, sp.Length)];
 		GameObject ene = Instantiate(ianDuck, _sp.position, _sp.rotation);
 		IanEnemy enemy_spawn = ene.GetComponent<IanEnemy>();
 		enemy_spawn.Player = Ian;
 	}
 
-	void SpawnGhostDuck()
+	void SpawnGhostDuck(Transform[] sp)
 	{
-		Transform _sp = spawnPoints[Random.Range(0, spawnPoints.Length)];
+		Transform _sp = sp[Random.Range(0, sp.Length)];
 		GameObject ene = Instantiate(ghostDuck, _sp.position, _sp.rotation);
 		AngelEnemy enemy_spawn = ene.GetComponent<AngelEnemy>();
 		enemy_spawn.Player = Player;
