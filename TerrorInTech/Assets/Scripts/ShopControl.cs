@@ -35,7 +35,7 @@ public class ShopControl : MonoBehaviour
         if (PlayerPrefs.GetInt("healthCost") == 0)
             PlayerPrefs.SetInt("healthCost", 5);
         if (PlayerPrefs.GetInt("ianHealthCost") == 0)
-            PlayerPrefs.SetInt("ianHealthCost", 5);
+            PlayerPrefs.SetInt("ianHealthCost", 20);
     }
 
     // Update is called once per frame
@@ -101,14 +101,14 @@ public class ShopControl : MonoBehaviour
     {
         currency -= healthCost;
         PlayerPrefs.SetInt("healthCost", healthCost + 5);
-        PlayerPrefs.SetInt("health", PlayerPrefs.GetInt("health") + 1);
+        PlayerPrefs.SetInt("health", PlayerPrefs.GetInt("total health"));
     }
 
     public void buyIanHealth()
     {
         currency -= healthCost;
-        PlayerPrefs.SetInt("ianHealthCost", ianHealthCost + 5);
-        PlayerPrefs.SetInt("health", PlayerPrefs.GetInt("health") + 1);
+        PlayerPrefs.SetInt("ianHealthCost", ianHealthCost + 20);
+        PlayerPrefs.SetInt("ianHealth", PlayerPrefs.GetInt("total ianHealth"));
     }
 
     public void buyOrange()

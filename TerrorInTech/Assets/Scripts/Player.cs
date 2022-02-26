@@ -132,7 +132,7 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.name == "Enemy(Clone)")
+        if (collision.gameObject.name == "Duck(Clone)" || collision.gameObject.name == "GhostDuck(Clone)" || collision.gameObject.name == "IanDuck(Clone)")
         {
             if (!invincible)
             {

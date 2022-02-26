@@ -13,6 +13,7 @@ public class WaveSpawner : MonoBehaviour
 	public GameObject ianDuck;
 	public GameObject ghostDuck;
 	public GameObject waveOverText;
+	public Text wot;
 	private float spawnRate = 1;
 	private int WaveCount = 0;
 	public enum SpawnState { SPAWNING, WAITING, COUNTING };
@@ -41,7 +42,7 @@ public class WaveSpawner : MonoBehaviour
 		{
 			Debug.LogError("No spawn points referenced.");
 		}
-
+		WaveNumberText.text = "wave number: " + WaveCount.ToString();
 		waveCountdown = timeBetweenWaves;
 	}
 
@@ -76,7 +77,7 @@ public class WaveSpawner : MonoBehaviour
 			}
 			else
 			{
-				WaveCountdownText.text = "time until next wave: 0";
+				WaveCountdownText.text = "time until \nnext wave: 0";
 				PlayerPrefs.SetInt("wave happening", 0);
 			}
 		}
@@ -105,6 +106,7 @@ public class WaveSpawner : MonoBehaviour
 
 	IEnumerator showText()
     {
+		wot.text = "WAVE " + WaveCount.ToString() + " OVER!";
 		waveOverText.SetActive(true);
 		yield return new WaitForSeconds(2.5f);
 		waveOverText.SetActive(false);
