@@ -16,6 +16,7 @@ public class Bullet : MonoBehaviour
     private void Start()
     {
         sr = GetComponent<SpriteRenderer>();
+        Physics2D.IgnoreLayerCollision(10, 7);
     }
 
     private void FixedUpdate()

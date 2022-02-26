@@ -5,7 +5,6 @@ using UnityEngine;
 public class Initialization : MonoBehaviour
 {
     // Start is called before the first frame update
-    public Transform Player;   
     public float followSpeed = 0.001f;
 
     void Start()

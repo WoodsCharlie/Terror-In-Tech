@@ -14,7 +14,7 @@ public class IanEnemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        total_health = 3;
+        total_health = (PlayerPrefs.GetInt("wave count") - 1) / 4 + 1;
         health = total_health;
         Physics2D.IgnoreLayerCollision(6, 7);
     }

@@ -46,9 +46,9 @@ public class ShopControl : MonoBehaviour
         ianHealthCost = PlayerPrefs.GetInt("ianHealthCost");
 
         currencyText.text = "bank: $" + currency.ToString();
-        speedText.text = speedCost.ToString() + ".";
-        healthText.text = healthCost.ToString() + ".";
-        ianHealthText.text = ianHealthCost.ToString() + ".";
+        speedText.text = "$" + speedCost.ToString();
+        healthText.text = "$" + healthCost.ToString();
+        ianHealthText.text = "$" + ianHealthCost.ToString();
 
         if (currency >= speedCost)
             speedButton.interactable = true;

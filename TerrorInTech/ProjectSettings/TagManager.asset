@@ -12,12 +12,12 @@ TagManager:
   - 
   - Water
   - UI
-  - enemies
+  - ghost_enemies
   - coin
   - player
   - walls
-  - 
-  - 
+  - bullet
+  - regular_enemies
   - 
   - 
   - 

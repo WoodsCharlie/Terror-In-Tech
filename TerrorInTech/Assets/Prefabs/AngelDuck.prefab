@@ -19,6 +19,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AngelDuck
       objectReference: {fileID: 0}
+    - target: {fileID: 823025322385593989, guid: 3dc0d35b04ecc3c478a8ffad5971a1df, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 823025322385593990, guid: 3dc0d35b04ecc3c478a8ffad5971a1df, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -67,6 +71,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: d14c5b039d2cc77498bfdf1a91a18521, type: 3}
+    - target: {fileID: 2685368278482561113, guid: 3dc0d35b04ecc3c478a8ffad5971a1df, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3223168652934875962, guid: 3dc0d35b04ecc3c478a8ffad5971a1df, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7847060741059753479, guid: 3dc0d35b04ecc3c478a8ffad5971a1df, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3dc0d35b04ecc3c478a8ffad5971a1df, type: 3}

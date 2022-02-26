@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 823025322385593988}
   - component: {fileID: 823025322385593984}
   - component: {fileID: 7847060741059753479}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: Duck
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -160,7 +160,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3915095716313644793}
   - component: {fileID: 2235245881567907600}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: healthbar bg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -242,7 +242,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4750038151218223501}
   - component: {fileID: 6583540542742867252}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: healthbar
   m_TagString: Untagged
   m_Icon: {fileID: 0}

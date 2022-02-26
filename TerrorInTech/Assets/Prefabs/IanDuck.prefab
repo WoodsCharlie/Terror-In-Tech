@@ -21,7 +21,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 823025322385593989, guid: 3dc0d35b04ecc3c478a8ffad5971a1df, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 823025322385593990, guid: 3dc0d35b04ecc3c478a8ffad5971a1df, type: 3}
       propertyPath: m_RootOrder
@@ -91,11 +91,17 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7847060741059753479, guid: 3dc0d35b04ecc3c478a8ffad5971a1df, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3dc0d35b04ecc3c478a8ffad5971a1df, type: 3}
 --- !u!1 &699442466978945876 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 823025322385593989, guid: 3dc0d35b04ecc3c478a8ffad5971a1df, type: 3}
+  m_PrefabInstance: {fileID: 206904020507004369}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3343338660747544299 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3223168652934875962, guid: 3dc0d35b04ecc3c478a8ffad5971a1df, type: 3}
   m_PrefabInstance: {fileID: 206904020507004369}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1350970902649776723
@@ -112,5 +118,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.03
   Player: {fileID: 2085558801660281553, guid: a6e847c558b6f824b8a0b2accd676fa0, type: 3}
-  healthbar: {fileID: 0}
-  coin: {fileID: 0}
+  healthbar: {fileID: 3343338660747544299}
+  coin: {fileID: 8682413679643101826, guid: f2a4e327b57e2834c889c3a6dc826f1a, type: 3}

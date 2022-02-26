@@ -6,26 +6,16 @@ using UnityEngine.UI;
 public class WaveSpawner : MonoBehaviour
 {
 	public Transform Player;
+	public Transform Ian;
 	public Text WaveNumberText;
 	public Text WaveCountdownText;
+	public GameObject regDuck;
+	public GameObject ianDuck;
+	public GameObject ghostDuck;
+	public GameObject waveOverText;
+	private float spawnRate = 1;
 	private int WaveCount = 0;
 	public enum SpawnState { SPAWNING, WAITING, COUNTING };
-
-	[System.Serializable]
-	public class Wave
-	{
-		public string name;
-		public GameObject enemy;
-		public int count;
-		public float rate;
-	}
-
-	public Wave[] waves;
-	private int nextWave = 0;
-	public int NextWave
-	{
-		get { return nextWave + 1; }
-	}
 
 	public Transform[] spawnPoints;
 
@@ -73,7 +63,7 @@ public class WaveSpawner : MonoBehaviour
 		{
 			if (state != SpawnState.SPAWNING)
 			{
-				StartCoroutine(SpawnWave(waves[nextWave]));
+				StartCoroutine(SpawnWave());
 			}
 		}
 		else
@@ -81,7 +71,7 @@ public class WaveSpawner : MonoBehaviour
 			waveCountdown -= Time.deltaTime;
 			if (waveCountdown >= 0)
 			{
-				WaveCountdownText.text = "time until next wave: " + ((int)waveCountdown).ToString();
+				WaveCountdownText.text = "time until \nnext wave: " + ((int)waveCountdown).ToString();
 				PlayerPrefs.SetInt("wave happening", 1);
 			}
 			else
@@ -94,22 +84,9 @@ public class WaveSpawner : MonoBehaviour
 
 	void WaveCompleted()
 	{
-
 		state = SpawnState.COUNTING;
 		waveCountdown = timeBetweenWaves;
-
-		if (nextWave + 1 > waves.Length - 1)
-		{
-			for (int i = 0; i < waves.Length; i++)
-			{
-				waves[i].count += 5;
-			}
-			nextWave = 0;
-		}
-		else
-		{
-			nextWave++;
-		}
+		StartCoroutine(showText());
 	}
 
 	bool EnemyIsAlive()
@@ -126,30 +103,79 @@ public class WaveSpawner : MonoBehaviour
 		return true;
 	}
 
-	IEnumerator SpawnWave(Wave _wave)
+	IEnumerator showText()
+    {
+		waveOverText.SetActive(true);
+		yield return new WaitForSeconds(2.5f);
+		waveOverText.SetActive(false);
+	}
+
+	IEnumerator SpawnWave()
 	{
 		state = SpawnState.SPAWNING;
 		WaveCount += 1;
 		PlayerPrefs.SetInt("wave count", WaveCount);
 		WaveNumberText.text = "wave number: " + WaveCount.ToString();
 
-		for (int i = 0; i < _wave.count; i++)
+		if (WaveCount <= 2)
+        {
+			for (int i = 0; i < 4*WaveCount; i++)
+            {
+				SpawnRegDuck();
+				yield return new WaitForSeconds(1f / spawnRate);
+			}
+		}
+
+		if (WaveCount <= 4 && WaveCount >= 3)
 		{
-			SpawnEnemy(_wave.enemy);
-			yield return new WaitForSeconds(1f / _wave.rate);
+			spawnRate = 1.5f;
+			for (int i = 0; i < 2 * (WaveCount-1); i++)
+			{
+				SpawnRegDuck();
+				SpawnIanDuck();
+				SpawnRegDuck();
+				yield return new WaitForSeconds(1f / spawnRate);
+			}
+		}
+
+		if (WaveCount >= 5)
+		{
+			spawnRate = 2.0f;
+			for (int i = 0; i < WaveCount; i++)
+            {
+				SpawnRegDuck();
+				SpawnIanDuck();
+				SpawnGhostDuck();
+				SpawnRegDuck();
+				yield return new WaitForSeconds(1f / spawnRate);
+			}				
 		}
 
 		state = SpawnState.WAITING;
-
 		yield break;
 	}
 
-	void SpawnEnemy(GameObject _enemy)
+	void SpawnRegDuck()
 	{
 		Transform _sp = spawnPoints[Random.Range(0, spawnPoints.Length)];
-		GameObject ene = Instantiate(_enemy, _sp.position, _sp.rotation);
+		GameObject ene = Instantiate(regDuck, _sp.position, _sp.rotation);
 		enemy enemy_spawn = ene.GetComponent<enemy>();
 		enemy_spawn.Player = Player;
 	}
 
+	void SpawnIanDuck()
+	{
+		Transform _sp = spawnPoints[Random.Range(0, spawnPoints.Length)];
+		GameObject ene = Instantiate(ianDuck, _sp.position, _sp.rotation);
+		IanEnemy enemy_spawn = ene.GetComponent<IanEnemy>();
+		enemy_spawn.Player = Ian;
+	}
+
+	void SpawnGhostDuck()
+	{
+		Transform _sp = spawnPoints[Random.Range(0, spawnPoints.Length)];
+		GameObject ene = Instantiate(ghostDuck, _sp.position, _sp.rotation);
+		AngelEnemy enemy_spawn = ene.GetComponent<AngelEnemy>();
+		enemy_spawn.Player = Player;
+	}
 }

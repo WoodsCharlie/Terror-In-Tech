@@ -44,7 +44,6 @@ public class Player : MonoBehaviour
         currency = PlayerPrefs.GetInt("currency");
         health = 100;
 
-        speedText.text = "speed: " + speed.ToString();
         currencyText.text = "currency: " + currency.ToString();
 
         PlayerPrefs.SetInt("gameStarted", 1);
@@ -52,7 +51,7 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
-        currencyText.text = "currency: " + currency.ToString();
+        currencyText.text = "bank: $" + currency.ToString();
 
         var horizAxis = Input.GetAxis("Horizontal");
         var vertAxis = Input.GetAxis("Vertical");
@@ -144,6 +143,7 @@ public class Player : MonoBehaviour
         if (collision.gameObject.name == "Coin(Clone)")
         {
             currency += 1;
+            PlayerPrefs.SetInt("currency", currency);
             Destroy(collision.gameObject);
         }
     }
