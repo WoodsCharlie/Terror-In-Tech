@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ian_script : MonoBehaviour
 {
@@ -35,6 +36,12 @@ public class ian_script : MonoBehaviour
             PlayerPrefs.SetInt("ianHealth", 32);
         if (Input.GetKey(KeyCode.H))
             PlayerPrefs.SetInt("ianHealth", 16);
+
+        //game ends when Ian runs out of hp
+
+        if (PlayerPrefs.GetInt("ianHealth") <= 0)
+            SceneManager.LoadScene("DeathScene");
+
 
         // making ian invincible for half a second if they are hit by an enemy
         if (invincible)

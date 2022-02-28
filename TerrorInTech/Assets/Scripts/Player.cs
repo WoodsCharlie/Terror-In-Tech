@@ -95,19 +95,27 @@ public class Player : MonoBehaviour
                 SceneManager.LoadScene("ShopScene");
             }
         }
-        else
+        else{
             entershop.SetActive(false);
-
+        }
         // making player invincible for half a second if they are hit by an enemy
         if (invincible)
         {
-            if (invincible_timer >= 0)
+            if (invincible_timer >= 0){
                 invincible_timer -= Time.fixedDeltaTime;
-            else
+            }
+            else{
                 invincible = false;
+            }
         }
-        else
+        else{
             invincible_timer = 0.5f;
+        }
+        //making the game end if the player dies
+        if (health == 0)
+        {
+            SceneManager.LoadScene("DeathScene");
+        }
     }
 
     void TurnToMouse()
