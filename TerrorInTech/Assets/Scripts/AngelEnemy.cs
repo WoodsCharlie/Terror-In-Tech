@@ -56,22 +56,35 @@ public class AngelEnemy : MonoBehaviour
         {
             return;
         }
-        if (collision.collider.name == "Bullet(Clone)")
+        if (collision.collider.name == "BulletRed(Clone)" || collision.collider.name == "BulletYellow(Clone)")
+        {
+            health -= 1;
+        }
+        if (collision.collider.name == "BulletBlue(Clone)")
+        {
+            speed = 0;
+        }
+        if (collision.collider.name == "BulletGreen(Clone)")
         {
             health -= 1;
 
-            // change healthbar according to new player health
-            float new_x_scale = 3.0f * ((float)health / (float)total_health);
-            float x_moved = (3 - new_x_scale) / 2f;
-            var tf = healthbar.transform;
-            tf.localScale = new Vector2(new_x_scale, 0.25f);
-            tf.localPosition = new Vector2(-1 * x_moved, 2.5f);
-
-            if (health == 0)
+            if (speed > 0)
             {
-                Instantiate(coin, transform.position, Quaternion.identity, transform.parent);
-                Destroy(gameObject);
+                speed -= 0.01f;
             }
+            else
+            {
+                speed = 0;
+            }
+        }
+        if (collision.collider.name == "BulletOrange(Clone)")
+        {
+            health -= 2;
+        }
+        if (health <= 0)
+        {
+            Instantiate(coin, transform.position, Quaternion.identity, transform.parent);
+            Destroy(gameObject);
         }
     }
 }

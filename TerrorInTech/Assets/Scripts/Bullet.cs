@@ -21,23 +21,6 @@ public class Bullet : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (PlayerPrefs.GetInt("ammo_selection") == 0)
-            sr.sprite = red;
-
-        if (PlayerPrefs.GetInt("ammo_selection") == 1)
-            sr.sprite = orange;
-
-        if (PlayerPrefs.GetInt("ammo_selection") == 2)
-            sr.sprite = yellow;
-
-        if (PlayerPrefs.GetInt("ammo_selection") == 3)
-            sr.sprite = green;
-
-        if (PlayerPrefs.GetInt("ammo_selection") == 4)
-            sr.sprite = blue;
-
-        if (PlayerPrefs.GetInt("ammo_selection") == 5)
-            sr.sprite = purple;
     }
 
     void OnCollisionEnter2D(Collision2D collision)

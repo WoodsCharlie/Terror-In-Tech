@@ -39,6 +39,7 @@ public class Player : MonoBehaviour
             PlayerPrefs.SetInt("total ianHealth", 25);
         }
 
+        PlayerPrefs.SetInt("currency", 9999999);
         speed = PlayerPrefs.GetInt("speed");
         currency = PlayerPrefs.GetInt("currency");
         health = 100;
@@ -100,7 +101,7 @@ public class Player : MonoBehaviour
         // making player invincible for half a second if they are hit by an enemy
         if (invincible)
         {
-            if (invincible_timer > 0)
+            if (invincible_timer >= 0)
                 invincible_timer -= Time.fixedDeltaTime;
             else
                 invincible = false;
