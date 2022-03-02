@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     private Rigidbody2D rigidBody;
     private SpriteRenderer mySpriteRend;
 
-    private int health;
+    public int health;
     private int speed;
     private int currency;
 
@@ -31,18 +31,18 @@ public class Player : MonoBehaviour
 
         if (PlayerPrefs.GetInt("gameStarted") == 0)
         {
-            PlayerPrefs.SetInt("total health", 10);
-            PlayerPrefs.SetInt("health", 10);
+            PlayerPrefs.SetInt("total health", 25);
+            PlayerPrefs.SetInt("health", 25);
             PlayerPrefs.SetInt("speed", 3);
             PlayerPrefs.SetInt("enemy damage", 1);
-            PlayerPrefs.SetInt("ianHealth", 25);
-            PlayerPrefs.SetInt("total ianHealth", 25);
+            PlayerPrefs.SetInt("ianHealth", 50);
+            PlayerPrefs.SetInt("total ianHealth", 50);
         }
 
-        PlayerPrefs.SetInt("currency", 9999999);
+        PlayerPrefs.SetInt("currency", 666);
         speed = PlayerPrefs.GetInt("speed");
         currency = PlayerPrefs.GetInt("currency");
-        health = 100;
+        health = PlayerPrefs.GetInt("health");
 
         currencyText.text = "currency: " + currency.ToString();
 
@@ -153,13 +153,10 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.name == "Duck(Clone)" || collision.gameObject.name == "GhostDuck(Clone)" || collision.gameObject.name == "IanDuck(Clone)")
+        if (collision.gameObject.CompareTag("Enemy"))
         {
-            if (!invincible)
-            {
-                health -= PlayerPrefs.GetInt("enemy damage");
-                //invincible = true;
-            }
+            health -= PlayerPrefs.GetInt("enemy damage");
+            //invincible = true;
         }
         if (collision.gameObject.name == "Coin(Clone)")
         {
@@ -168,10 +165,4 @@ public class Player : MonoBehaviour
             Destroy(collision.gameObject);
         }
     }
-
-    private void OnCollision2D(Collision2D collision)
-    {
-
-    }
-
 }

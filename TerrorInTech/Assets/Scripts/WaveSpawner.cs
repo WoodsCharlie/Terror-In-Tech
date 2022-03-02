@@ -49,7 +49,7 @@ public class WaveSpawner : MonoBehaviour
 	void Start()
 	{
 		WaveCount = PlayerPrefs.GetInt("wave count");
-		if (WaveCount == 10)
+		if (WaveCount >= 10)
 		{
 			tempDoor1.SetActive(false);
 			tempDoor2.SetActive(false);
