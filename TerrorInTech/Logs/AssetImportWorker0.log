@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/release' branch; Version is '2020.3.27f1 (e759542391ea) revision 15161684'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'en' Physical Memory: 16166 MB
+OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'en' Physical Memory: 7893 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
@@ -11,184 +11,113 @@ C:\Program Files\Unity\Hub\Editor\2020.3.27f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/chrlw/Documents/School/CS_377/Terror In Tech/Terror-In-Tech/TerrorInTech
+C:/Users/HP/Documents/GitHub/Terror-In-Tech/TerrorInTech
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-58171
-Successfully changed project path to: C:/Users/chrlw/Documents/School/CS_377/Terror In Tech/Terror-In-Tech/TerrorInTech
-C:/Users/chrlw/Documents/School/CS_377/Terror In Tech/Terror-In-Tech/TerrorInTech
+65195
+Successfully changed project path to: C:/Users/HP/Documents/GitHub/Terror-In-Tech/TerrorInTech
+C:/Users/HP/Documents/GitHub/Terror-In-Tech/TerrorInTech
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 64.92 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 65.28 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.27f1 (e759542391ea)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/chrlw/Documents/School/CS_377/Terror In Tech/Terror-In-Tech/TerrorInTech/Assets
+[Subsystems] Discovering subsystems at path C:/Users/HP/Documents/GitHub/Terror-In-Tech/TerrorInTech/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: Radeon 540X Series (ID=0x6987)
+    Renderer: Intel(R) UHD Graphics 620 (ID=0x3ea0)
     Vendor:   
-    VRAM:     2029 MB
-    Driver:   30.0.13023.1012
+    VRAM:     3946 MB
+    Driver:   26.20.100.7927
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56516
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56616
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002729 seconds.
+Registered in 0.003664 seconds.
 Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 51.43 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 56.77 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.740 seconds
+- Completed reload, in  0.748 seconds
 Domain Reload Profiling:
-	ReloadAssembly (740ms)
-		BeginReloadAssembly (102ms)
+	ReloadAssembly (749ms)
+		BeginReloadAssembly (86ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (549ms)
-			LoadAssemblies (98ms)
+		EndReloadAssembly (575ms)
+			LoadAssemblies (83ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (180ms)
+			SetupTypeCache (171ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (39ms)
-			SetupLoadedEditorAssemblies (200ms)
+			RebuildScriptCaches (64ms)
+			SetupLoadedEditorAssemblies (214ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (52ms)
-				BeforeProcessingInitializeOnLoad (8ms)
-				ProcessInitializeOnLoadAttributes (93ms)
-				ProcessInitializeOnLoadMethodAttributes (41ms)
+				RefreshPlugins (57ms)
+				BeforeProcessingInitializeOnLoad (21ms)
+				ProcessInitializeOnLoadAttributes (97ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.009639 seconds.
+Registered in 0.010205 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-000002B775FC6010 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7723275F0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7764E40F0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B772330CA0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B775F68510 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B775F7B720 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\PsdPlugin.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B775FF2C30 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B775F7B720 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7748B9E40 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7750B0030 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B773AECCD0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7750B0030 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7764E40F0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7750B0030 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7748B9E40 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7748B9E40 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77672F4D0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77382B2E0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B774F94030 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B774B8E030 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7748F14B0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7751E4010 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Mathematics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B773B320F0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77384AF00 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B775211C20 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77613C320 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7763BFC20 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B776152010 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B774FD6C50 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B773AEBA60 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B774D1EC20 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7765B0E20 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77613C320 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B775225E30 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 55.99 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 47.66 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.588 seconds
+- Completed reload, in  1.432 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1590ms)
-		BeginReloadAssembly (272ms)
+	ReloadAssembly (1433ms)
+		BeginReloadAssembly (234ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
+			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (38ms)
-		EndReloadAssembly (1244ms)
-			LoadAssemblies (156ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (1109ms)
+			LoadAssemblies (154ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (424ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (92ms)
-			SetupLoadedEditorAssemblies (469ms)
+			SetupTypeCache (327ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (68ms)
+			SetupLoadedEditorAssemblies (464ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (56ms)
-				BeforeProcessingInitializeOnLoad (111ms)
-				ProcessInitializeOnLoadAttributes (261ms)
-				ProcessInitializeOnLoadMethodAttributes (23ms)
-				AfterProcessingInitializeOnLoad (12ms)
+				RefreshPlugins (48ms)
+				BeforeProcessingInitializeOnLoad (104ms)
+				ProcessInitializeOnLoadAttributes (270ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (10ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
-Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2212 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 97.0 MB.
-System memory in use after: 97.1 MB.
+System memory in use before: 96.4 MB.
+System memory in use after: 96.5 MB.
 
 Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2647.
-Total: 3.086100 ms (FindLiveObjects: 0.212100 ms CreateObjectMapping: 0.071600 ms MarkObjects: 2.745300 ms  DeleteObjects: 0.056500 ms)
+Total: 13.095500 ms (FindLiveObjects: 0.202000 ms CreateObjectMapping: 0.075300 ms MarkObjects: 12.353500 ms  DeleteObjects: 0.462800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -203,125 +132,574 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes/DeathScene.unity
-  artifactKey: Guid(5d8ce932e86c01e48afb7f208aba5dad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/DeathScene.unity using Guid(5d8ce932e86c01e48afb7f208aba5dad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c90b09d3217f31eb0a7e52092fc5daa7') in 0.024528 seconds 
-  Import took 0.031327 seconds .
+  path: Assets/Prefabs/Duck.prefab
+  artifactKey: Guid(3dc0d35b04ecc3c478a8ffad5971a1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Duck.prefab using Guid(3dc0d35b04ecc3c478a8ffad5971a1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8374dc351f2d6c4e73d831212e66c848') in 0.199913 seconds 
+  Import took 0.204550 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000463 seconds.
+  path: Assets/Prefabs/Coin.prefab
+  artifactKey: Guid(f2a4e327b57e2834c889c3a6dc826f1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Coin.prefab using Guid(f2a4e327b57e2834c889c3a6dc826f1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1475069ea61708ef55b1f7277f4c9153') in 0.032243 seconds 
+  Import took 0.037892 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000306 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(8ea57c66de2e2164ba165520a8606b66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(8ea57c66de2e2164ba165520a8606b66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d2816c106dc841b2322fe6e96bd7e39') in 0.032259 seconds 
+  Import took 0.037849 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000444 seconds.
+  path: Assets/Prefabs/MAP.prefab
+  artifactKey: Guid(5cd6e3b70a86c344b8f00f8742b836ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MAP.prefab using Guid(5cd6e3b70a86c344b8f00f8742b836ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf39cb90b52347298bb6c7cb3ba5736f') in 0.031920 seconds 
+  Import took 0.037736 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000408 seconds.
+  path: Assets/Prefabs/Ian.prefab
+  artifactKey: Guid(a6e847c558b6f824b8a0b2accd676fa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Ian.prefab using Guid(a6e847c558b6f824b8a0b2accd676fa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd87e9012f4ba6b13b6c57f99db06deca') in 0.042352 seconds 
+  Import took 0.047408 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/Prefabs/GhostDuck.prefab
+  artifactKey: Guid(8c5687d8423305548af94c8d6b7e0477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GhostDuck.prefab using Guid(8c5687d8423305548af94c8d6b7e0477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '657b14cae8662afc328504063d420440') in 0.040682 seconds 
+  Import took 0.047508 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Prefabs/IanDuck.prefab
+  artifactKey: Guid(e9db86674a25aba4db7d847deaa453a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/IanDuck.prefab using Guid(e9db86674a25aba4db7d847deaa453a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b1b4ef0692ae51af6a52ccf55a31449') in 0.051080 seconds 
+  Import took 0.055965 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(7767682ead683274db407a338100e6a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs using Guid(7767682ead683274db407a338100e6a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1461e62dec7711dd7301f6665125e81f') in 0.011045 seconds 
+  Import took 0.017056 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000610 seconds.
+  path: Assets/PublicPixel-0W6DP.ttf
+  artifactKey: Guid(c42c257b6cd146a449635d05ac3b04ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PublicPixel-0W6DP.ttf using Guid(c42c257b6cd146a449635d05ac3b04ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b51d6332b3d9c6d947a0edf439c06c26') in 0.070956 seconds 
+  Import took 0.077578 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.220023 seconds.
+  path: Assets/Prefabs/GhostDuck.prefab
+  artifactKey: Guid(8c5687d8423305548af94c8d6b7e0477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GhostDuck.prefab using Guid(8c5687d8423305548af94c8d6b7e0477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2a554a1314aa5be6bfe51ebfe8867b5') in 0.026849 seconds 
+  Import took 0.032129 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.435341 seconds.
+  path: Assets/Prefabs/GhostDuck.prefab
+  artifactKey: Guid(8c5687d8423305548af94c8d6b7e0477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GhostDuck.prefab using Guid(8c5687d8423305548af94c8d6b7e0477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d530acba61651e5f48fe6d1e3905055') in 0.021442 seconds 
+  Import took 0.027441 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.837624 seconds.
+  path: Assets/Prefabs/GhostDuck.prefab
+  artifactKey: Guid(8c5687d8423305548af94c8d6b7e0477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GhostDuck.prefab using Guid(8c5687d8423305548af94c8d6b7e0477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f1a4c30df68f46fe37d71023d9f6111') in 0.025172 seconds 
+  Import took 0.031405 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.099382 seconds.
+  path: Assets/Prefabs/GhostDuck.prefab
+  artifactKey: Guid(8c5687d8423305548af94c8d6b7e0477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GhostDuck.prefab using Guid(8c5687d8423305548af94c8d6b7e0477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cee87d14f3d3b96badcaa3a3f7889c17') in 0.025821 seconds 
+  Import took 0.031732 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.884604 seconds.
+  path: Assets/Prefabs/GhostDuck.prefab
+  artifactKey: Guid(8c5687d8423305548af94c8d6b7e0477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GhostDuck.prefab using Guid(8c5687d8423305548af94c8d6b7e0477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0a21dbcbe1ab5bb84cbbb1ca703724c') in 0.024191 seconds 
+  Import took 0.030217 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.001864 seconds.
+  path: Assets/Prefabs/GhostDuck.prefab
+  artifactKey: Guid(8c5687d8423305548af94c8d6b7e0477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GhostDuck.prefab using Guid(8c5687d8423305548af94c8d6b7e0477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a68fb4b34c481c8f88672438b9efac8') in 0.025628 seconds 
+  Import took 0.031000 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.398347 seconds.
+  path: Assets/Prefabs/GhostDuck.prefab
+  artifactKey: Guid(8c5687d8423305548af94c8d6b7e0477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GhostDuck.prefab using Guid(8c5687d8423305548af94c8d6b7e0477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc97642f8160aff38babbc19a7174db5') in 0.026517 seconds 
+  Import took 0.032537 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.241263 seconds.
+  path: Assets/Prefabs/GhostDuck.prefab
+  artifactKey: Guid(8c5687d8423305548af94c8d6b7e0477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GhostDuck.prefab using Guid(8c5687d8423305548af94c8d6b7e0477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d7933aa2aba5d65073b46d3590b562c') in 0.024467 seconds 
+  Import took 0.030653 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.065555 seconds.
+  path: Assets/Prefabs/GhostDuck.prefab
+  artifactKey: Guid(8c5687d8423305548af94c8d6b7e0477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GhostDuck.prefab using Guid(8c5687d8423305548af94c8d6b7e0477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '098c45172764e9b3d2747d5c7281a767') in 0.024948 seconds 
+  Import took 0.031328 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.795127 seconds.
+  path: Assets/Prefabs/GhostDuck.prefab
+  artifactKey: Guid(8c5687d8423305548af94c8d6b7e0477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GhostDuck.prefab using Guid(8c5687d8423305548af94c8d6b7e0477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afe83f9790cf4e060715f16fb988cd67') in 0.024281 seconds 
+  Import took 0.031286 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.783134 seconds.
+  path: Assets/Prefabs/GhostDuck.prefab
+  artifactKey: Guid(8c5687d8423305548af94c8d6b7e0477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GhostDuck.prefab using Guid(8c5687d8423305548af94c8d6b7e0477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54dbc008810048ccfd5ff6e51c1ccda7') in 0.025737 seconds 
+  Import took 0.031386 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.688128 seconds.
+  path: Assets/Prefabs/GhostDuck.prefab
+  artifactKey: Guid(8c5687d8423305548af94c8d6b7e0477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GhostDuck.prefab using Guid(8c5687d8423305548af94c8d6b7e0477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e98a0dc8f749a5d614442bbed2ab377') in 0.026564 seconds 
+  Import took 0.032542 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.386984 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(1297b6848759e9848baa55d491a5cbda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(1297b6848759e9848baa55d491a5cbda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2df6d85654f8659feea4e16d54b5e79') in 0.009364 seconds 
+  Import took 0.014885 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.325044 seconds.
+  path: Assets/Scenes/IntroScreen.unity
+  artifactKey: Guid(28e5aa2da5841ed42bbf5bf53b8369a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/IntroScreen.unity using Guid(28e5aa2da5841ed42bbf5bf53b8369a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58630471924e6fe83e9248a7e73c2804') in 0.010276 seconds 
+  Import took 0.015129 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.008811 seconds.
+Registered in 0.007439 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-000002B775320420 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A5F12C0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B779FE9820 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B773D1A3E0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A62DD50 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B776BF4030 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\PsdPlugin.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A62DD50 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B776BF4030 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B776801240 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B776801240 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B776AB2010 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B774CC6B10 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B779FE9820 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B776801240 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B776AE0220 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B776AE0220 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B773D1EF60 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B776801240 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B775F42010 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A0EC830 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B775444050 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B777BE0030 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Mathematics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B779FE9820 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B773CB6010 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B775444050 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B776AEFEC0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7795D6300 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77390FC10 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B775345030 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B773CA17C0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B776ECE820 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7793AD310 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B779FE9820 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B778271C80 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.322 seconds
+- Completed reload, in  1.338 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1322ms)
-		BeginReloadAssembly (162ms)
+	ReloadAssembly (1338ms)
+		BeginReloadAssembly (145ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (39ms)
-		EndReloadAssembly (1063ms)
-			LoadAssemblies (151ms)
+			CreateAndSetChildDomain (40ms)
+		EndReloadAssembly (1112ms)
+			LoadAssemblies (153ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (390ms)
+			SetupTypeCache (427ms)
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (55ms)
-			SetupLoadedEditorAssemblies (372ms)
+			SetupLoadedEditorAssemblies (369ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (108ms)
+				ProcessInitializeOnLoadAttributes (231ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 99.1 MB.
+System memory in use after: 99.2 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2693.
+Total: 3.442700 ms (FindLiveObjects: 0.185200 ms CreateObjectMapping: 0.083500 ms MarkObjects: 3.133300 ms  DeleteObjects: 0.039800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010866 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.323 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1324ms)
+		BeginReloadAssembly (152ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (1102ms)
+			LoadAssemblies (137ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (421ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (398ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (118ms)
+				ProcessInitializeOnLoadAttributes (252ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 99.1 MB.
+System memory in use after: 99.2 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2695.
+Total: 3.377500 ms (FindLiveObjects: 0.198500 ms CreateObjectMapping: 0.088000 ms MarkObjects: 3.064700 ms  DeleteObjects: 0.024100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007933 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.310 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1311ms)
+		BeginReloadAssembly (187ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (1045ms)
+			LoadAssemblies (138ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (354ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (380ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (112ms)
+				ProcessInitializeOnLoadAttributes (229ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 99.1 MB.
+System memory in use after: 99.3 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2697.
+Total: 4.101800 ms (FindLiveObjects: 0.208200 ms CreateObjectMapping: 0.121100 ms MarkObjects: 3.708500 ms  DeleteObjects: 0.062200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007026 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.201 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1201ms)
+		BeginReloadAssembly (135ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (39ms)
+		EndReloadAssembly (1000ms)
+			LoadAssemblies (122ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (355ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (65ms)
+			SetupLoadedEditorAssemblies (360ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (106ms)
+				ProcessInitializeOnLoadAttributes (226ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 99.2 MB.
+System memory in use after: 99.3 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2699.
+Total: 2.997000 ms (FindLiveObjects: 0.176600 ms CreateObjectMapping: 0.083800 ms MarkObjects: 2.717800 ms  DeleteObjects: 0.017900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007405 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.257 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1258ms)
+		BeginReloadAssembly (140ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (39ms)
+		EndReloadAssembly (1050ms)
+			LoadAssemblies (126ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (344ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (58ms)
+			SetupLoadedEditorAssemblies (399ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (86ms)
-				ProcessInitializeOnLoadAttributes (257ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
+				BeforeProcessingInitializeOnLoad (132ms)
+				ProcessInitializeOnLoadAttributes (233ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 99.2 MB.
+System memory in use after: 99.3 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2701.
+Total: 3.897800 ms (FindLiveObjects: 0.240300 ms CreateObjectMapping: 0.153300 ms MarkObjects: 3.473700 ms  DeleteObjects: 0.028300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007081 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.275 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1276ms)
+		BeginReloadAssembly (155ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (1048ms)
+			LoadAssemblies (153ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (364ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (60ms)
+			SetupLoadedEditorAssemblies (384ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (122ms)
+				ProcessInitializeOnLoadAttributes (232ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 99.2 MB.
+System memory in use after: 99.3 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2703.
+Total: 3.520000 ms (FindLiveObjects: 0.179800 ms CreateObjectMapping: 0.070200 ms MarkObjects: 3.165800 ms  DeleteObjects: 0.103100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007463 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.247 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1248ms)
+		BeginReloadAssembly (143ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (1020ms)
+			LoadAssemblies (129ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (358ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (59ms)
+			SetupLoadedEditorAssemblies (377ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (110ms)
+				ProcessInitializeOnLoadAttributes (239ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
 				AfterProcessingInitializeOnLoad (9ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (11ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.4 MB.
-System memory in use after: 96.5 MB.
+System memory in use before: 99.2 MB.
+System memory in use after: 99.3 MB.
 
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2649.
-Total: 3.992800 ms (FindLiveObjects: 0.230300 ms CreateObjectMapping: 0.097200 ms MarkObjects: 3.639500 ms  DeleteObjects: 0.024400 ms)
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2705.
+Total: 3.163200 ms (FindLiveObjects: 0.181000 ms CreateObjectMapping: 0.073700 ms MarkObjects: 2.890300 ms  DeleteObjects: 0.017300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -336,126 +714,81 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 34.078546 seconds.
+  Time since last request: 505.703857 seconds.
+  path: Assets/Prefabs/Duck.prefab
+  artifactKey: Guid(3dc0d35b04ecc3c478a8ffad5971a1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Duck.prefab using Guid(3dc0d35b04ecc3c478a8ffad5971a1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81ccb7abaed1a55fe71232b7c02f951d') in 0.071143 seconds 
+  Import took 0.076005 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/Prefabs/GhostDuck.prefab
+  artifactKey: Guid(8c5687d8423305548af94c8d6b7e0477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GhostDuck.prefab using Guid(8c5687d8423305548af94c8d6b7e0477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3275c9f3ca67f7ff42e200640bd9f8d7') in 0.025448 seconds 
+  Import took 0.030615 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000372 seconds.
+  path: Assets/Prefabs/IanDuck.prefab
+  artifactKey: Guid(e9db86674a25aba4db7d847deaa453a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/IanDuck.prefab using Guid(e9db86674a25aba4db7d847deaa453a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba83f4824c4b3504ea28be3af2e89d22') in 0.035554 seconds 
+  Import took 0.043330 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.700796 seconds.
   path: Assets/Scenes/SampleScene.unity
   artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16909a55732918cbe4fedd1705bf5895') in 0.022866 seconds 
-  Import took 0.028078 seconds .
+Start importing Assets/Scenes/SampleScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0c18f626879b22c7f92cd95466cff6d') in 0.013071 seconds 
+  Import took 0.020350 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.006751 seconds.
+Registered in 0.012032 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-000002B776D14020 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A5EE500 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B74A4B4E00 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77ACBFF20 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A62DD50 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B776D38C30 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\PsdPlugin.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B779FDC010 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B776D38C30 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B776D38C30 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B779FDC010 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77503E050 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B774CC6B10 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B74A4B4E00 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B779FDC010 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B776C62E70 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7755E7120 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B776C8FF00 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B776C62E70 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B775320420 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B773CB6010 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B775320420 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7738040D0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Mathematics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B74A4B4E00 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A815E40 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B776152010 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7764F9B10 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7795D1A80 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77390FC10 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B777A24240 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7765DC670 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7748C7A70 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77AC84440 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B74A4B4E00 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77617A620 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.82 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.289 seconds
+- Completed reload, in  1.253 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1290ms)
-		BeginReloadAssembly (144ms)
+	ReloadAssembly (1254ms)
+		BeginReloadAssembly (169ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
+			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (40ms)
-		EndReloadAssembly (1074ms)
-			LoadAssemblies (128ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (998ms)
+			LoadAssemblies (153ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (373ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (49ms)
-			SetupLoadedEditorAssemblies (379ms)
+			SetupTypeCache (324ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (393ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (11ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (81ms)
-				ProcessInitializeOnLoadAttributes (259ms)
+				BeforeProcessingInitializeOnLoad (113ms)
+				ProcessInitializeOnLoadAttributes (252ms)
 				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (11ms)
+				AfterProcessingInitializeOnLoad (9ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.4 MB.
-System memory in use after: 96.6 MB.
+System memory in use before: 99.2 MB.
+System memory in use after: 99.3 MB.
 
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2651.
-Total: 3.890800 ms (FindLiveObjects: 0.188700 ms CreateObjectMapping: 0.093000 ms MarkObjects: 3.589400 ms  DeleteObjects: 0.018300 ms)
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2708.
+Total: 3.737200 ms (FindLiveObjects: 0.215500 ms CreateObjectMapping: 0.106100 ms MarkObjects: 3.385500 ms  DeleteObjects: 0.028800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -471,747 +804,495 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.006183 seconds.
+Registered in 0.012469 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-000002B776D14020 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A5F0380 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7755C9E50 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7772C6CF0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A62DD50 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B776AE99B0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\PsdPlugin.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A504020 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B776AE99B0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A62DD50 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A62DD50 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77503E050 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B774CC6B10 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B776AF0FC0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A62DD50 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77812C240 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77812C240 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B776C8FF00 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A635D60 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7779FD030 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B775807020 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B773B5C130 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7738040D0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Mathematics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B776AF0FC0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B775807020 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B773B5C130 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B774FDEC60 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7795D7520 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B773C47E80 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B775348A30 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77534A7A0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B773C89250 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A635D60 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B776AF0FC0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B777CB4030 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.68 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.972 seconds
+- Completed reload, in  1.269 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1973ms)
-		BeginReloadAssembly (185ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (49ms)
-		EndReloadAssembly (1655ms)
-			LoadAssemblies (230ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (649ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (458ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (87ms)
-				ProcessInitializeOnLoadAttributes (316ms)
-				ProcessInitializeOnLoadMethodAttributes (14ms)
-				AfterProcessingInitializeOnLoad (27ms)
-				EditorAssembliesLoaded (5ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (29ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.91 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.5 MB.
-System memory in use after: 96.6 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2653.
-Total: 4.335700 ms (FindLiveObjects: 0.155800 ms CreateObjectMapping: 0.073100 ms MarkObjects: 4.086100 ms  DeleteObjects: 0.019600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006032 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000002B77A342010 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B74A48A4F0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77490B8B0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77534BEC0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7755C0020 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B773E29890 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\PsdPlugin.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77AC1B020 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B773E29890 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A7BD8A0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A7BD8A0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A342010 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B774CC6B10 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B775457260 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B773AAA010 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B775065260 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B775065260 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77ACAA330 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A9DFA40 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7779FD030 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B776D78020 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7755CFF10 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7738040D0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Mathematics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77AC88840 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B776D78020 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7755CFF10 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B775345030 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7795C9BA0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B773AECCD0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A7BD8A0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77925DDB0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77394FFE0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A9DFA40 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B775457260 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7755C0020 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.29 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.510 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1511ms)
-		BeginReloadAssembly (232ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (50ms)
-		EndReloadAssembly (1196ms)
-			LoadAssemblies (214ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (396ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (88ms)
-			SetupLoadedEditorAssemblies (444ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (84ms)
-				ProcessInitializeOnLoadAttributes (324ms)
-				ProcessInitializeOnLoadMethodAttributes (15ms)
-				AfterProcessingInitializeOnLoad (11ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.5 MB.
-System memory in use after: 96.6 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2655.
-Total: 3.641600 ms (FindLiveObjects: 0.298400 ms CreateObjectMapping: 0.191900 ms MarkObjects: 3.131000 ms  DeleteObjects: 0.016900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005908 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000002B77503E050 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A5F12C0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B74A4A8120 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B776AEE860 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7755C0020 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B776BF4030 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\PsdPlugin.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77AF1F020 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7774FD010 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7755C0020 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7755C0020 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A82C030 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B774CC6B10 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B74A4A8120 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B775F74500 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B773A09020 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B777FDE050 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77AE05050 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B773A09020 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7779FD030 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7755C8030 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A9CB030 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7738040D0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Mathematics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77B031E50 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7755C8030 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7764CB3F0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7797B6010 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7795D1A80 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7795E0040 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A62DD50 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A634390 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B774D1E650 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A635D60 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B74A4A8120 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77AA271F0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.498 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1499ms)
-		BeginReloadAssembly (183ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (10ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (47ms)
-		EndReloadAssembly (1202ms)
-			LoadAssemblies (159ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (473ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (56ms)
-			SetupLoadedEditorAssemblies (398ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (92ms)
-				ProcessInitializeOnLoadAttributes (269ms)
-				ProcessInitializeOnLoadMethodAttributes (16ms)
-				AfterProcessingInitializeOnLoad (12ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (13ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.5 MB.
-System memory in use after: 96.6 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2657.
-Total: 4.154600 ms (FindLiveObjects: 0.410200 ms CreateObjectMapping: 0.093000 ms MarkObjects: 3.628700 ms  DeleteObjects: 0.021100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005804 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000002B776AB2010 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A5F3510 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77824EF90 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77B0A8790 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B773B34100 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77B028020 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\PsdPlugin.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77605E020 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77AD65080 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B777A25070 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A7BD8A0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A82C030 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B774CC6B10 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B776700470 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B775F74500 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7766F7450 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7760C2010 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B773D14030 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7766F7450 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B773A52F10 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B778199010 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A9CB030 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7738040D0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Mathematics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B776700470 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B778199010 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7753C8020 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B774FDEC60 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7795D1A80 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B779CF0BC0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A7BD8A0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7772C7B80 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B776C46630 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7766F7450 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B776700470 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B773B34100 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.545 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1545ms)
-		BeginReloadAssembly (180ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (15ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (51ms)
-		EndReloadAssembly (1257ms)
-			LoadAssemblies (154ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (378ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (63ms)
-			SetupLoadedEditorAssemblies (486ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (96ms)
-				ProcessInitializeOnLoadAttributes (345ms)
-				ProcessInitializeOnLoadMethodAttributes (20ms)
-				AfterProcessingInitializeOnLoad (15ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (15ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.79 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.5 MB.
-System memory in use after: 96.6 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2659.
-Total: 4.612000 ms (FindLiveObjects: 0.236400 ms CreateObjectMapping: 0.110900 ms MarkObjects: 4.233400 ms  DeleteObjects: 0.030000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005699 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000002B77A98B010 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A5F5B30 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77490B8B0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A7C1A40 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7755C0020 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B777BD0030 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\PsdPlugin.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77605E020 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7774FD010 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B777BD0030 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7755C0020 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A82C030 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B774CC6B10 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77490B8B0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77AA271F0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B777FDE050 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B777FDE050 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B773D98540 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B777FDE050 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B773A52F10 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7755C8030 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A9CB030 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7738040D0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Mathematics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77986ED30 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7755C8030 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7753C8020 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B777BD8040 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7795D1A80 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B774F94030 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77612E020 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77612FD90 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A76CAA0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77AA2F200 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77490B8B0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A62DD50 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.454 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1455ms)
-		BeginReloadAssembly (186ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (50ms)
-		EndReloadAssembly (1172ms)
-			LoadAssemblies (165ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (383ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (432ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (84ms)
-				ProcessInitializeOnLoadAttributes (305ms)
-				ProcessInitializeOnLoadMethodAttributes (19ms)
-				AfterProcessingInitializeOnLoad (14ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (18ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.70 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.5 MB.
-System memory in use after: 96.6 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2661.
-Total: 4.348300 ms (FindLiveObjects: 0.275500 ms CreateObjectMapping: 0.134600 ms MarkObjects: 3.913500 ms  DeleteObjects: 0.022800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.014750 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000002B77A98B010 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A5F0380 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77490B8B0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7773474A0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7755C0020 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B777BD0030 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\PsdPlugin.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77605E020 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77AD65080 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B777BD0030 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7755C0020 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A82C030 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B774CC6B10 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77490B8B0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B775F74500 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7766F7450 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B777FDE050 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B773A88020 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7766F7450 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B774882C30 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7755C8030 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A9CB030 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7738040D0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Mathematics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B773B2DD50 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7755C8030 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7753C8020 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B777BD8040 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7795D1170 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B79BB32040 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77612E020 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B7761337D0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77AA35270 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77A635D60 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77490B8B0 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002B77605E020 doesn't match image C:\Users\chrlw\Documents\School\CS_377\Terror In Tech\Terror-In-Tech\TerrorInTech\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.471 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1471ms)
-		BeginReloadAssembly (157ms)
+	ReloadAssembly (1270ms)
+		BeginReloadAssembly (148ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (38ms)
-		EndReloadAssembly (1154ms)
-			LoadAssemblies (166ms)
+		EndReloadAssembly (1047ms)
+			LoadAssemblies (138ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (436ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (69ms)
-			SetupLoadedEditorAssemblies (314ms)
+			SetupTypeCache (353ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (59ms)
+			SetupLoadedEditorAssemblies (396ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (114ms)
+				ProcessInitializeOnLoadAttributes (250ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 99.2 MB.
+System memory in use after: 99.3 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2710.
+Total: 3.358800 ms (FindLiveObjects: 0.172500 ms CreateObjectMapping: 0.079700 ms MarkObjects: 3.086400 ms  DeleteObjects: 0.019000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 129.087472 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(9afec875630afd843b96748195415c08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(9afec875630afd843b96748195415c08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b2e8f074840a548d1e9dce593b59e88') in 0.011747 seconds 
+  Import took 0.016150 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.755790 seconds.
+  path: Assets/Scripts/Player.cs
+  artifactKey: Guid(b66ad6534a026a944a489b0a99b6a8a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player.cs using Guid(b66ad6534a026a944a489b0a99b6a8a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3fd56c7fa4a985fea4f2446a8ebf91d') in 0.006792 seconds 
+  Import took 0.010384 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.815573 seconds.
+  path: Assets/Scripts/Player.cs
+  artifactKey: Guid(b66ad6534a026a944a489b0a99b6a8a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player.cs using Guid(b66ad6534a026a944a489b0a99b6a8a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '483d13c0ecf79f967be4eb25e1a25320') in 0.014910 seconds 
+  Import took 0.024653 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007928 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.218 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1218ms)
+		BeginReloadAssembly (135ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (1013ms)
+			LoadAssemblies (120ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (318ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (388ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (68ms)
-				ProcessInitializeOnLoadAttributes (217ms)
-				ProcessInitializeOnLoadMethodAttributes (14ms)
-				AfterProcessingInitializeOnLoad (8ms)
+				BeforeProcessingInitializeOnLoad (120ms)
+				ProcessInitializeOnLoadAttributes (239ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.69 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 99.2 MB.
+System memory in use after: 99.3 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2712.
+Total: 3.608800 ms (FindLiveObjects: 0.214000 ms CreateObjectMapping: 0.075500 ms MarkObjects: 3.297600 ms  DeleteObjects: 0.020600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 21.222822 seconds.
+  path: Assets/Scripts/Player.cs
+  artifactKey: Guid(b66ad6534a026a944a489b0a99b6a8a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player.cs using Guid(b66ad6534a026a944a489b0a99b6a8a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6acd35311f4b1ee9b0268f5f9c95da1') in 0.008765 seconds 
+  Import took 0.013319 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014313 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.377 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1377ms)
+		BeginReloadAssembly (150ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (1141ms)
+			LoadAssemblies (149ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (453ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (66ms)
+			SetupLoadedEditorAssemblies (380ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (118ms)
+				ProcessInitializeOnLoadAttributes (231ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 99.3 MB.
+System memory in use after: 99.4 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2714.
+Total: 3.924700 ms (FindLiveObjects: 0.215000 ms CreateObjectMapping: 0.139400 ms MarkObjects: 3.545000 ms  DeleteObjects: 0.024000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 5.321009 seconds.
+  path: Assets/Scripts/Player.cs
+  artifactKey: Guid(b66ad6534a026a944a489b0a99b6a8a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player.cs using Guid(b66ad6534a026a944a489b0a99b6a8a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bb386828b2242b35f42284a6852e66f') in 0.005916 seconds 
+  Import took 0.009505 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.266247 seconds.
+  path: Assets/Scripts/Player.cs
+  artifactKey: Guid(b66ad6534a026a944a489b0a99b6a8a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player.cs using Guid(b66ad6534a026a944a489b0a99b6a8a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd64584a2ee580f5e7a04b7950d6459b7') in 0.010215 seconds 
+  Import took 0.017846 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006852 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.299 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1299ms)
+		BeginReloadAssembly (144ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (1082ms)
+			LoadAssemblies (123ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (351ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (458ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (161ms)
+				ProcessInitializeOnLoadAttributes (267ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 99.3 MB.
+System memory in use after: 99.4 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2716.
+Total: 3.292400 ms (FindLiveObjects: 0.195700 ms CreateObjectMapping: 0.077900 ms MarkObjects: 2.999800 ms  DeleteObjects: 0.018000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.017789 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.227 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3228ms)
+		BeginReloadAssembly (338ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (15ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (91ms)
+		EndReloadAssembly (2722ms)
+			LoadAssemblies (350ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (888ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (185ms)
+			SetupLoadedEditorAssemblies (993ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (278ms)
+				ProcessInitializeOnLoadAttributes (643ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
+				AfterProcessingInitializeOnLoad (22ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (29ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 99.3 MB.
+System memory in use after: 99.5 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2718.
+Total: 7.463800 ms (FindLiveObjects: 0.387200 ms CreateObjectMapping: 0.407800 ms MarkObjects: 6.628200 ms  DeleteObjects: 0.038800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011047 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.279 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1279ms)
+		BeginReloadAssembly (180ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (60ms)
+		EndReloadAssembly (1029ms)
+			LoadAssemblies (137ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (356ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (399ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (122ms)
+				ProcessInitializeOnLoadAttributes (248ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (9ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.5 MB.
-System memory in use after: 96.6 MB.
+System memory in use before: 99.3 MB.
+System memory in use after: 99.5 MB.
 
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2663.
-Total: 2.861100 ms (FindLiveObjects: 0.183500 ms CreateObjectMapping: 0.089100 ms MarkObjects: 2.572500 ms  DeleteObjects: 0.015000 ms)
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2720.
+Total: 3.615400 ms (FindLiveObjects: 0.200800 ms CreateObjectMapping: 0.080200 ms MarkObjects: 3.311900 ms  DeleteObjects: 0.021300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007829 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.257 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1258ms)
+		BeginReloadAssembly (139ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (1049ms)
+			LoadAssemblies (125ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (335ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (443ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (145ms)
+				ProcessInitializeOnLoadAttributes (264ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.82 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 99.3 MB.
+System memory in use after: 99.5 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2722.
+Total: 4.139700 ms (FindLiveObjects: 0.258600 ms CreateObjectMapping: 0.169500 ms MarkObjects: 3.687300 ms  DeleteObjects: 0.022600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007747 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.353 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1353ms)
+		BeginReloadAssembly (284ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (61ms)
+		EndReloadAssembly (991ms)
+			LoadAssemblies (231ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (334ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (374ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (106ms)
+				ProcessInitializeOnLoadAttributes (239ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 99.3 MB.
+System memory in use after: 99.6 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2724.
+Total: 3.602300 ms (FindLiveObjects: 0.207300 ms CreateObjectMapping: 0.089200 ms MarkObjects: 3.276800 ms  DeleteObjects: 0.027600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 

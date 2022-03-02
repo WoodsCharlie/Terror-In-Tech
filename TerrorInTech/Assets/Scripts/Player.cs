@@ -98,6 +98,19 @@ public class Player : MonoBehaviour
         else{
             entershop.SetActive(false);
         }
+
+        //exit game on pressing escape
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+
+        //testing skip to wave 9
+        if (Input.GetKey(KeyCode.Alpha9))
+        {
+            PlayerPrefs.SetInt("wave count", 9);
+        }
+
         // making player invincible for half a second if they are hit by an enemy
         if (invincible)
         {
@@ -145,7 +158,7 @@ public class Player : MonoBehaviour
             if (!invincible)
             {
                 health -= PlayerPrefs.GetInt("enemy damage");
-                invincible = true;
+                //invincible = true;
             }
         }
         if (collision.gameObject.name == "Coin(Clone)")

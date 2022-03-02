@@ -15,6 +15,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 4.3
       objectReference: {fileID: 0}
+    - target: {fileID: 823025322385593988, guid: 3dc0d35b04ecc3c478a8ffad5971a1df, type: 3}
+      propertyPath: m_Mass
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 823025322385593989, guid: 3dc0d35b04ecc3c478a8ffad5971a1df, type: 3}
       propertyPath: m_Name
       value: IanDuck

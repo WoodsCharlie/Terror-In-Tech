@@ -49,6 +49,11 @@ public class WaveSpawner : MonoBehaviour
 	void Start()
 	{
 		WaveCount = PlayerPrefs.GetInt("wave count");
+		if (WaveCount == 10)
+		{
+			tempDoor1.SetActive(false);
+			tempDoor2.SetActive(false);
+		}
 		if (spawnPoints.Length == 0)
 		{
 			Debug.LogError("No spawn points referenced.");
@@ -59,6 +64,13 @@ public class WaveSpawner : MonoBehaviour
 
 	void Update()
 	{
+		WaveCount = PlayerPrefs.GetInt("wave count");
+		if (WaveCount == 10)
+		{
+			tempDoor1.SetActive(false);
+			tempDoor2.SetActive(false);
+		}
+
 		if (state == SpawnState.WAITING)
 		{
 			if (!EnemyIsAlive())
@@ -92,12 +104,6 @@ public class WaveSpawner : MonoBehaviour
 				PlayerPrefs.SetInt("wave happening", 0);
 			}
 		}
-
-		if (WaveCount == 6)
-        {
-			tempDoor1.SetActive(false);
-			tempDoor2.SetActive(false);
-        }
 	}
 
 	void WaveCompleted()
@@ -143,56 +149,45 @@ public class WaveSpawner : MonoBehaviour
 		PlayerPrefs.SetInt("wave count", WaveCount);
 		WaveNumberText.text = "wave number: " + WaveCount.ToString();
 
-		if (WaveCount <= 2)
+		// first four waves just regular ducks
+		if (WaveCount <= 4)
         {
-			for (int i = 0; i < 4 * WaveCount; i++)
+			for (int i = 0; i < 3 * WaveCount; i++)
             {
 				SpawnRegDuck(spawnPoints);
 				yield return new WaitForSeconds(1f / spawnRate);
 			}
 		}
-
-		if (WaveCount <= 4 && WaveCount >= 3)
+		else if (WaveCount % 5 == 0)
 		{
+			numBossFights += 1;
+			BossFight();
+		}
+		else if (WaveCount >= 6 && WaveCount <= 9)
+        {
 			spawnRate = 1.5f;
-			for (int i = 0; i < 2 * (WaveCount-1); i++)
+			for (int i = 0; i < WaveCount - numBossFights; i++)
 			{
 				SpawnRegDuck(spawnPoints);
-				SpawnIanDuck(spawnPoints);
+				yield return new WaitForSeconds(1f / spawnRate);
 				SpawnRegDuck(spawnPoints);
+				yield return new WaitForSeconds(1f / spawnRate);
+				SpawnIanDuck(spawnPoints);
 				yield return new WaitForSeconds(1f / spawnRate);
 			}
 		}
-
-		if (WaveCount >= 5)
+		else if (WaveCount >= 10)
 		{
-			spawnRate = 2.0f;
-			if (WaveCount % 5 == 0)
+			spawnRate = 2;
+			for (int i = 0; i < WaveCount - numBossFights; i++)
 			{
-				numBossFights += 1;
-				BossFight();
+				SpawnRegDuck(spawnPoints2);
+				yield return new WaitForSeconds(1f / spawnRate);
+				SpawnGhostDuck(spawnPoints2);
+				yield return new WaitForSeconds(1f / spawnRate);
+				SpawnIanDuck(spawnPoints);
+				yield return new WaitForSeconds(1f / spawnRate);
 			}
-            else
-            {
-				for (int i = 0; i < WaveCount - numBossFights; i++)
-				{
-					if (WaveCount < 10)
-                    {
-						SpawnRegDuck(spawnPoints);
-						SpawnIanDuck(spawnPoints);
-						SpawnGhostDuck(spawnPoints);
-						SpawnRegDuck(spawnPoints);
-					}
-					else
-                    {
-						SpawnRegDuck(spawnPoints2);
-						SpawnIanDuck(spawnPoints2);
-						SpawnGhostDuck(spawnPoints2);
-						SpawnRegDuck(spawnPoints2);
-					}
-					yield return new WaitForSeconds(1f / spawnRate);
-				}
-			}				
 		}
 
 		state = SpawnState.WAITING;
