@@ -10,6 +10,8 @@ public class StartGame : MonoBehaviour
     public void startGame()
     {
         PlayerPrefs.DeleteAll();
+        PlayerPrefs.SetFloat("player y", 9.5f);
+        PlayerPrefs.SetFloat("player x", 0.0f);
         SceneManager.LoadScene("SampleScene");
     }
 

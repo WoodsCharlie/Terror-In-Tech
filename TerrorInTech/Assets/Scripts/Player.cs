@@ -39,7 +39,7 @@ public class Player : MonoBehaviour
             PlayerPrefs.SetInt("total ianHealth", 50);
         }
 
-        PlayerPrefs.SetInt("currency", 666);
+        //PlayerPrefs.SetInt("currency", 666);
         speed = PlayerPrefs.GetInt("speed");
         currency = PlayerPrefs.GetInt("currency");
         health = PlayerPrefs.GetInt("health");
