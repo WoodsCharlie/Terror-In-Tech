@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class IanEnemy : MonoBehaviour
 {
+    private SpriteRenderer sr;
     public float speed = 0.03f;
     public Transform Player;
     public GameObject healthbar;
@@ -14,7 +15,8 @@ public class IanEnemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        total_health = (PlayerPrefs.GetInt("wave count") - 1) / 4 + 1;
+        sr = this.GetComponent<SpriteRenderer>();
+        total_health = (PlayerPrefs.GetInt("wave count") - 1) / 5 + 1;
         health = total_health;
         Physics2D.IgnoreLayerCollision(6, 7);
     }
@@ -53,6 +55,12 @@ public class IanEnemy : MonoBehaviour
         {
             return;
         }
+
+        if (collision.collider.name == "BulletRed(Clone)" || collision.collider.name == "BulletYellow(Clone)" || collision.collider.name == "BulletGreen(Clone)" || collision.collider.name == "BulletOrange(Clone)" || collision.collider.name == "BulletPurple(Clone)")
+        {
+            StartCoroutine(flashDamage());
+        }
+
         if (collision.collider.name == "BulletRed(Clone)" || collision.collider.name == "BulletYellow(Clone)")
         {
             health -= 1;
@@ -83,6 +91,13 @@ public class IanEnemy : MonoBehaviour
             Instantiate(coin, transform.position, Quaternion.identity, transform.parent);
             Destroy(gameObject);
         }
+    }
+
+    IEnumerator flashDamage()
+    {
+        sr.color = Color.red;
+        yield return new WaitForSeconds(0.2f);
+        sr.color = Color.white;
     }
 }
 

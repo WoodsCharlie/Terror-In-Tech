@@ -103,6 +103,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 823025322385593989, guid: 3dc0d35b04ecc3c478a8ffad5971a1df, type: 3}
   m_PrefabInstance: {fileID: 206904020507004369}
   m_PrefabAsset: {fileID: 0}
+--- !u!212 &699442466978945878 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 823025322385593991, guid: 3dc0d35b04ecc3c478a8ffad5971a1df, type: 3}
+  m_PrefabInstance: {fileID: 206904020507004369}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3343338660747544299 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3223168652934875962, guid: 3dc0d35b04ecc3c478a8ffad5971a1df, type: 3}
@@ -120,6 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 409e00ccc25fa884ab558469355b263a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sr: {fileID: 699442466978945878}
   speed: 0.03
   Player: {fileID: 2085558801660281553, guid: a6e847c558b6f824b8a0b2accd676fa0, type: 3}
   healthbar: {fileID: 3343338660747544299}

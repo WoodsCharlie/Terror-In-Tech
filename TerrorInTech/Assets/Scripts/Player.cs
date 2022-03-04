@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
     public Text currencyText;
     public Text speedText;
     public Slider healthBar;
+    public Image healthBarFill;
     public GameObject entershop;
 
     // Start is called before the first frame update
@@ -105,10 +106,16 @@ public class Player : MonoBehaviour
             Application.Quit();
         }
 
-        //testing skip to wave 9
+        //reset to wave 1
+        if (Input.GetKey(KeyCode.Alpha0))
+        {
+            PlayerPrefs.SetInt("wave count", 0);
+        }
+
+        //testing skip to wave 11
         if (Input.GetKey(KeyCode.Alpha9))
         {
-            PlayerPrefs.SetInt("wave count", 9);
+            PlayerPrefs.SetInt("wave count", 10);
         }
 
         // making player invincible for half a second if they are hit by an enemy
@@ -157,12 +164,24 @@ public class Player : MonoBehaviour
         {
             health -= PlayerPrefs.GetInt("enemy damage");
             //invincible = true;
+            StartCoroutine(flashDamage());
         }
         if (collision.gameObject.name == "Coin(Clone)")
         {
             currency += 1;
             PlayerPrefs.SetInt("currency", currency);
             Destroy(collision.gameObject);
+        }
+    }
+
+    IEnumerator flashDamage()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            healthBarFill.color = Color.yellow;
+            yield return new WaitForSeconds(0.1f);
+            healthBarFill.color = Color.red;
+            yield return new WaitForSeconds(0.1f);
         }
     }
 }

@@ -14,6 +14,7 @@ public class ian_script : MonoBehaviour
     private float invincible_timer;
 
     public Slider healthBar;
+    public Image healthBarFill;
 
     // Start is called before the first frame update
     void Start()
@@ -57,13 +58,25 @@ public class ian_script : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.name == "Duck(Clone)" || collision.gameObject.name == "GhostDuck(Clone)" || collision.gameObject.name == "IanDuck(Clone)")
+        if (collision.gameObject.CompareTag("Enemy"))
         {
             if (!invincible)
             {
                 PlayerPrefs.SetInt("ianHealth", PlayerPrefs.GetInt("ianHealth") - PlayerPrefs.GetInt("enemy damage"));
+                StartCoroutine(flashDamage());
                 invincible = true;
             }
         }     
+    }
+
+    IEnumerator flashDamage()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            healthBarFill.color = Color.yellow;
+            yield return new WaitForSeconds(0.1f);
+            healthBarFill.color = Color.red;
+            yield return new WaitForSeconds(0.1f);
+        }
     }
 }

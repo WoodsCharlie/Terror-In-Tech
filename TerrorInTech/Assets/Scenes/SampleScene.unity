@@ -3757,6 +3757,7 @@ MonoBehaviour:
   stage2: {fileID: 21300000, guid: 287809785f66aab4598f0c0f43bdee00, type: 3}
   stage3: {fileID: 21300000, guid: bf8cffb7ebf4e374886ac7cc2050e528, type: 3}
   healthBar: {fileID: 466568321}
+  healthBarFill: {fileID: 1281094943}
 --- !u!1 &862513732
 GameObject:
   m_ObjectHideFlags: 0
@@ -9323,6 +9324,10 @@ PrefabInstance:
       propertyPath: currencyText
       value: 
       objectReference: {fileID: 235969414}
+    - target: {fileID: 8742765267680899469, guid: 8ea57c66de2e2164ba165520a8606b66, type: 3}
+      propertyPath: healthBarFill
+      value: 
+      objectReference: {fileID: 500594715}
     - target: {fileID: 8742765267680899470, guid: 8ea57c66de2e2164ba165520a8606b66, type: 3}
       propertyPath: m_RootOrder
       value: 4
