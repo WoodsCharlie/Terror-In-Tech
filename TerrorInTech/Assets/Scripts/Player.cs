@@ -173,6 +173,13 @@ public class Player : MonoBehaviour
             //invincible = true;
             StartCoroutine(flashDamage());
         }
+        if (collision.gameObject.name == "FireBall(Clone)")
+        {
+            health -= PlayerPrefs.GetInt("enemy damage"); //adjust?
+            //invincible = true;
+            StartCoroutine(flashDamage());
+        }
+
         if (collision.gameObject.name == "Coin(Clone)")
         {
             currency += 1;
