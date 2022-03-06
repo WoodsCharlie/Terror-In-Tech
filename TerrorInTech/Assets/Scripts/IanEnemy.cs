@@ -11,6 +11,8 @@ public class IanEnemy : MonoBehaviour
     private int health;
     private int total_health;
     public GameObject coin;
+    private float knockbackDurration = 1f;
+    private float currentKnockbackTimer = 1f;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +26,13 @@ public class IanEnemy : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        transform.position = Vector3.MoveTowards(transform.position, Player.position, speed);
+        if (currentKnockbackTimer >= knockbackDurration){
+            transform.position = Vector3.MoveTowards(transform.position, Player.position, speed);
+        }
+        if (currentKnockbackTimer < knockbackDurration){
+            transform.position = Vector3.MoveTowards(transform.position, Player.position, -speed);
+            currentKnockbackTimer = currentKnockbackTimer + 0.05f;
+        }
         TurnToPlayer();
     }
 
@@ -54,6 +62,11 @@ public class IanEnemy : MonoBehaviour
         if (GameObj.name == collision.collider.name)
         {
             return;
+        }
+
+        if (collision.collider.name == "Ian")
+        {
+            currentKnockbackTimer = 0f;
         }
 
         if (collision.collider.name == "BulletRed(Clone)" || collision.collider.name == "BulletYellow(Clone)" || collision.collider.name == "BulletGreen(Clone)" || collision.collider.name == "BulletOrange(Clone)" || collision.collider.name == "BulletPurple(Clone)")
