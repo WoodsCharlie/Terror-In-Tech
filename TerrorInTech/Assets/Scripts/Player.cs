@@ -25,6 +25,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        transform.localScale = new Vector3(0.525f, 0.525f, 1);
         transform.position = new Vector2(PlayerPrefs.GetFloat("player x"), PlayerPrefs.GetFloat("player y"));
 
         rigidBody = GetComponent<Rigidbody2D>();
@@ -110,6 +111,12 @@ public class Player : MonoBehaviour
         if (Input.GetKey(KeyCode.Alpha0))
         {
             PlayerPrefs.SetInt("wave count", 0);
+        }
+
+        //testing skip to boss fight
+        if (Input.GetKey(KeyCode.Alpha8))
+        {
+            PlayerPrefs.SetInt("wave count", 4);
         }
 
         //testing skip to wave 11
