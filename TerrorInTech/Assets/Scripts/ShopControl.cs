@@ -26,6 +26,8 @@ public class ShopControl : MonoBehaviour
     public Button blue;
     public Button purple;
 
+    public Slider speedSlider;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +38,7 @@ public class ShopControl : MonoBehaviour
             PlayerPrefs.SetInt("healthCost", 5);
         if (PlayerPrefs.GetInt("ianHealthCost") == 0)
             PlayerPrefs.SetInt("ianHealthCost", 20);
+        speedSlider.value = speedSlider.value = (PlayerPrefs.GetInt("speed") - 3) * 20;
     }
 
     // Update is called once per frame
@@ -50,7 +53,7 @@ public class ShopControl : MonoBehaviour
         healthText.text = "$" + healthCost.ToString();
         ianHealthText.text = "$" + ianHealthCost.ToString();
 
-        if (currency >= speedCost)
+        if (currency >= speedCost && speedSlider.value < 100)
             speedButton.interactable = true;
         else
             speedButton.interactable = false;
@@ -95,6 +98,7 @@ public class ShopControl : MonoBehaviour
         currency -= speedCost;
         PlayerPrefs.SetInt("speedCost", speedCost+5);
         PlayerPrefs.SetInt("speed", PlayerPrefs.GetInt("speed") + 1);
+        speedSlider.value = (PlayerPrefs.GetInt("speed")-3)*20;
     }
 
     public void buyhealth()

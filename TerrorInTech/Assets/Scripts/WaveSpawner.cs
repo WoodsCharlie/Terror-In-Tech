@@ -21,6 +21,7 @@ public class WaveSpawner : MonoBehaviour
 	public GameObject regDuck;
 	public GameObject ianDuck;
 	public GameObject ghostDuck;
+	public GameObject boss;
 
 	public GameObject tempDoor1;
 	public GameObject tempDoor2;
@@ -32,6 +33,7 @@ public class WaveSpawner : MonoBehaviour
 
 	public Transform[] spawnPoints;
 	public Transform[] spawnPoints2;
+	public Transform bossSp;
 
 	public float WaveCountdown
 	{
@@ -196,8 +198,10 @@ public class WaveSpawner : MonoBehaviour
 
 	void BossFight()
     {
-
-    }
+		GameObject ene = Instantiate(boss, bossSp.position, bossSp.rotation);
+		Boss enemy_spawn = ene.GetComponent<Boss>();
+		enemy_spawn.Player = Player;
+	}
 
 	void SpawnRegDuck(Transform[] sp)
 	{
