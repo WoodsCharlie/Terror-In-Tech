@@ -123,26 +123,20 @@ public class ShopControl : MonoBehaviour
 
     public void buyYellow()
     {
-        currency -= 10;
-        PlayerPrefs.SetInt("yellow", PlayerPrefs.GetInt("yellow") + 20);
-    }
-
-    public void buyGreen()
-    {
-        currency -= 15;
-        PlayerPrefs.SetInt("green", PlayerPrefs.GetInt("green") + 20);
+        currency -= 20;
+        PlayerPrefs.SetInt("yellow", PlayerPrefs.GetInt("yellow") + 10);
     }
 
     public void buyBlue()
     {
-        currency -= 20;
-        PlayerPrefs.SetInt("blue", PlayerPrefs.GetInt("blue") + 20);
+        currency -= 15;
+        PlayerPrefs.SetInt("blue", PlayerPrefs.GetInt("blue") + 10);
     }
 
     public void buyPurple()
     {
-        currency -= 25;
-        PlayerPrefs.SetInt("purple", PlayerPrefs.GetInt("purple") + 20);
+        currency -= 10;
+        PlayerPrefs.SetInt("purple", PlayerPrefs.GetInt("purple") + 10);
     }
 
     public void exitShop()

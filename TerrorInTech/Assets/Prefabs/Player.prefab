@@ -212,7 +212,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -233,9 +233,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b66ad6534a026a944a489b0a99b6a8a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 0
   currencyText: {fileID: 0}
   speedText: {fileID: 0}
   healthBar: {fileID: 0}
+  healthBarFill: {fileID: 0}
   entershop: {fileID: 0}
 --- !u!58 &686082769
 CircleCollider2D:
@@ -266,6 +268,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 2027273922}
-  shotPrefab: {fileID: 8009896064515996793, guid: 55af96c96b11a1c4cbd82fafda433f62, type: 3}
+  redShotPrefab: {fileID: 0}
+  orangeShotPrefab: {fileID: 0}
+  yellowShotPrefab: {fileID: 0}
+  blueShotPrefab: {fileID: 0}
+  purpleShotPrefab: {fileID: 0}
+  Player: {fileID: 0}
   shotForce: 5
   shotDamage: 5
+  shotsPerReload: 12
+  shotsLeft: 0
+  reloadSpeed: 1
+  shotCooldownTotal: 0.025
+  shotCooldown: 0.025
