@@ -29,7 +29,7 @@ public class Boss : MonoBehaviour
         shootCooldownTotal = 1;
         shootCooldown = shootCooldownTotal;
 
-        Physics2D.IgnoreLayerCollision(12, 13);
+        Physics2D.IgnoreLayerCollision(14, 15);
     }
 
     void FixedUpdate()
@@ -71,7 +71,7 @@ public class Boss : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        var GameObj = GetComponent<BoxCollider2D>();
+        var GameObj = GetComponent<CapsuleCollider2D>();
         /* change healthbar according to new player health
             float new_x_scale = 3.0f * ((float)health/(float)total_health);
             float x_moved = (3 - new_x_scale) / 2f;

@@ -84,8 +84,6 @@ public class Player : MonoBehaviour
             PlayerPrefs.SetInt("ammo_selection", 3);
         if (Input.GetKey(KeyCode.Alpha5))
             PlayerPrefs.SetInt("ammo_selection", 4);
-        if (Input.GetKey(KeyCode.Alpha6))
-            PlayerPrefs.SetInt("ammo_selection", 5);
 
         // if between waves player can access shop
         if (PlayerPrefs.GetInt("wave happening") == 1)
@@ -138,7 +136,7 @@ public class Player : MonoBehaviour
             invincible_timer = 0.5f;
         }
         //making the game end if the player dies
-        if (health == 0)
+        if (health <= 0)
         {
             SceneManager.LoadScene("DeathScene");
         }
@@ -174,8 +172,7 @@ public class Player : MonoBehaviour
         }
         if (collision.gameObject.name == "FireBall(Clone)")
         {
-            health -= PlayerPrefs.GetInt("enemy damage"); //adjust?
-            //invincible = true;
+            health -= 4;
             StartCoroutine(flashDamage());
         }
 
