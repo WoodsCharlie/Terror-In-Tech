@@ -18,10 +18,16 @@ public class Boss : MonoBehaviour
     public GameObject fireBall;
     public Transform firePoint;
 
+    private float original_speed;
+    private float orginal_mass;
+    private Rigidbody2D rb;
+
+
     // Start is called before the first frame update
     void Start()
     {
         sr = this.GetComponent<SpriteRenderer>();
+        rb = this.GetComponent<Rigidbody2D>();
 
         total_health = (PlayerPrefs.GetInt("wave count")/5 + 1) * 12;
         health = total_health;
@@ -29,6 +35,9 @@ public class Boss : MonoBehaviour
         //shoot cooldown is the inverse of the # boss fight it is times 2.5 (2.5 is ez first fight to learn mechanic)
         shootCooldownTotal = 2.5f * 5f / (float)PlayerPrefs.GetInt("wave count");
         shootCooldown = shootCooldownTotal;
+
+        original_speed = speed;
+        orginal_mass = rb.mass;
 
         Physics2D.IgnoreLayerCollision(14, 15);
     }
@@ -96,7 +105,7 @@ public class Boss : MonoBehaviour
         }
         if (collision.collider.name == "BulletBlue(Clone)")
         {
-            speed = 0;
+            StartCoroutine(freezeEnemy());
         }
         if (collision.collider.name == "BulletGreen(Clone)")
         {
@@ -130,5 +139,16 @@ public class Boss : MonoBehaviour
         sr.color = Color.red;
         yield return new WaitForSeconds(0.2f);
         sr.color = Color.white;
+    }
+
+    IEnumerator freezeEnemy()
+    {
+        sr.color = Color.blue;
+        speed = 0;
+        rb.mass *= 10;
+        yield return new WaitForSeconds(1f);
+        sr.color = Color.white;
+        speed = original_speed;
+        rb.mass = orginal_mass;
     }
 }

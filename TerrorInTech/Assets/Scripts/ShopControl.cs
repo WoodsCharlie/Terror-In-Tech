@@ -22,7 +22,6 @@ public class ShopControl : MonoBehaviour
 
     public Button orange;
     public Button yellow;
-    public Button green;
     public Button blue;
     public Button purple;
 
@@ -70,19 +69,15 @@ public class ShopControl : MonoBehaviour
             orange.interactable = true;
         else
             orange.interactable = false;
-        if (currency >= 10)
+        if (currency >= 20)
             yellow.interactable = true;
         else
             yellow.interactable = false;
         if (currency >= 15)
-            green.interactable = true;
-        else
-            green.interactable = false;
-        if (currency >= 20)
             blue.interactable = true;
         else
             blue.interactable = false;
-        if (currency >= 25)
+        if (currency >= 10)
             purple.interactable = true;
         else
             purple.interactable = false;
