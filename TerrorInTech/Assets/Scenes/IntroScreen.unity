@@ -694,7 +694,7 @@ MonoBehaviour:
     the mouse to aim and shoot.
 
     Change ammo
-    using the number keys (1 - 6)'
+    using the number keys (1 - 5)'
 --- !u!222 &1444421101
 CanvasRenderer:
   m_ObjectHideFlags: 0
