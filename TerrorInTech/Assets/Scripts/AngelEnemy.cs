@@ -13,15 +13,21 @@ public class AngelEnemy : MonoBehaviour
     private int health;
     private int total_health;
     public GameObject coin;
+    private Color original_color;
+    private float original_speed;
+    private float orginal_mass;
+    private Rigidbody2D rb;
 
     // Start is called before the first frame update
     void Start()
     {
         sr = this.GetComponent<SpriteRenderer>();
+        rb = this.GetComponent<Rigidbody2D>();
         total_health = (PlayerPrefs.GetInt("wave count") - 1) / 5 + 1;
         health = total_health;
-        Physics2D.IgnoreLayerCollision(6, 7);
-        Physics2D.IgnoreLayerCollision(6, 9);
+        original_color = sr.color;
+        original_speed = speed;
+        orginal_mass = rb.mass;
     }
 
     // Update is called once per frame
@@ -59,31 +65,18 @@ public class AngelEnemy : MonoBehaviour
             return;
         }
 
-        if (collision.collider.name == "BulletRed(Clone)" || collision.collider.name == "BulletYellow(Clone)" || collision.collider.name == "BulletGreen(Clone)" || collision.collider.name == "BulletOrange(Clone)" || collision.collider.name == "BulletPurple(Clone)")
+        if (collision.collider.name == "BulletRed(Clone)" || collision.collider.name == "BulletYellow(Clone)" || collision.collider.name == "BulletGreen(Clone)" || collision.collider.name == "BulletOrange(Clone)" || collision.collider.name == "BulletIndigo(Clone)")
         {
             StartCoroutine(flashDamage());
         }
 
-        if (collision.collider.name == "BulletRed(Clone)" || collision.collider.name == "BulletYellow(Clone)")
+        if (collision.collider.name == "BulletRed(Clone)" || collision.collider.name == "BulletYellow(Clone)" || collision.collider.name == "BulletIndigo(Clone)")
         {
             health -= 1;
         }
         if (collision.collider.name == "BulletBlue(Clone)")
         {
-            speed = 0;
-        }
-        if (collision.collider.name == "BulletGreen(Clone)")
-        {
-            health -= 1;
-
-            if (speed > 0)
-            {
-                speed -= 0.01f;
-            }
-            else
-            {
-                speed = 0;
-            }
+            StartCoroutine(freezeEnemy());
         }
         if (collision.collider.name == "BulletOrange(Clone)")
         {
@@ -100,6 +93,16 @@ public class AngelEnemy : MonoBehaviour
     {
         sr.color = Color.red;
         yield return new WaitForSeconds(0.2f);
-        sr.color = Color.white;
+        sr.color = original_color;
+    }
+    IEnumerator freezeEnemy()
+    {
+        sr.color = Color.blue;
+        speed = 0;
+        rb.mass *= 10;
+        yield return new WaitForSeconds(1f);
+        sr.color = original_color;
+        speed = original_speed;
+        rb.mass = orginal_mass;
     }
 }

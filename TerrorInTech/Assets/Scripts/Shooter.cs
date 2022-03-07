@@ -9,7 +9,6 @@ public class Shooter : MonoBehaviour
     public Transform firePoint;
     public GameObject redShotPrefab;
     public GameObject orangeShotPrefab;
-    public GameObject greenShotPrefab;
     public GameObject yellowShotPrefab;
     public GameObject blueShotPrefab;
     public GameObject purpleShotPrefab;
@@ -20,17 +19,19 @@ public class Shooter : MonoBehaviour
     public int shotsPerReload = 12;
     public int shotsLeft;
     public float reloadSpeed = 1f;
-    public float shotCooldownTotal = 0.025f;
-    public float shotCooldown = 0.025f;
+    public float shotCooldownTotal = 0.05f;
+    public float shotCooldown = 0.05f;
 
     void Start()
     {
         shotsLeft = 12;
+        shotCooldownTotal = 0.05f;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        shotForce = Mathf.Log(PlayerPrefs.GetInt("speed")) * 5;
         if (Input.GetButton("Fire1") & (shotCooldown >= shotCooldownTotal))
         {
             if (PlayerPrefs.GetInt("ammo_selection") == 0)
@@ -74,7 +75,7 @@ public class Shooter : MonoBehaviour
                         {
                             temp.x += (i - 1) * 0.5f;
                         }
-                        GameObject bullet = Instantiate(greenShotPrefab, firePoint.position, firePoint.rotation);
+                        GameObject bullet = Instantiate(yellowShotPrefab, firePoint.position, firePoint.rotation);
                         Rigidbody2D body = bullet.GetComponent<Rigidbody2D>();
                         body.AddForce(temp * (float)shotForce/3, ForceMode2D.Impulse);
                     }
@@ -84,18 +85,8 @@ public class Shooter : MonoBehaviour
                 }
             }
 
+               
             if (PlayerPrefs.GetInt("ammo_selection") == 3)
-            {
-                if (PlayerPrefs.GetInt("green") > 0)
-                {
-                    PlayerPrefs.SetInt("green", PlayerPrefs.GetInt("green") - 1);
-                    GameObject bullet = Instantiate(yellowShotPrefab, firePoint.position, firePoint.rotation);
-                    Rigidbody2D body = bullet.GetComponent<Rigidbody2D>();
-                    body.AddForce(firePoint.up * shotForce, ForceMode2D.Impulse);
-                }
-            }
-                
-            if (PlayerPrefs.GetInt("ammo_selection") == 4)
             {
                 if (PlayerPrefs.GetInt("blue") > 0)
                 {
@@ -109,7 +100,7 @@ public class Shooter : MonoBehaviour
                 }
             }
 
-            if (PlayerPrefs.GetInt("ammo_selection") == 5)
+            if (PlayerPrefs.GetInt("ammo_selection") == 4)
             {
                 if (PlayerPrefs.GetInt("purple") > 0)
                 {
