@@ -8,14 +8,12 @@ public class ammo_manager : MonoBehaviour
 {
     public Text orange;
     public Text yellow;
-    public Text green;
     public Text blue;
     public Text purple;
 
     public GameObject red_selected;
     public GameObject orange_selected;
     public GameObject yellow_selected;
-    public GameObject green_selected;
     public GameObject blue_selected;
     public GameObject purple_selected;
 
@@ -30,7 +28,6 @@ public class ammo_manager : MonoBehaviour
     {
         orange.text = PlayerPrefs.GetInt("orange").ToString();
         yellow.text = PlayerPrefs.GetInt("yellow").ToString();
-        green.text = PlayerPrefs.GetInt("green").ToString();
         blue.text = PlayerPrefs.GetInt("blue").ToString();
         purple.text = PlayerPrefs.GetInt("purple").ToString();
 
@@ -50,16 +47,11 @@ public class ammo_manager : MonoBehaviour
             yellow_selected.SetActive(false);
 
         if (PlayerPrefs.GetInt("ammo_selection") == 3)
-            green_selected.SetActive(true);
-        else
-            green_selected.SetActive(false);
-
-        if (PlayerPrefs.GetInt("ammo_selection") == 4)
             blue_selected.SetActive(true);
         else
             blue_selected.SetActive(false);
 
-        if (PlayerPrefs.GetInt("ammo_selection") == 5)
+        if (PlayerPrefs.GetInt("ammo_selection") == 4)
             purple_selected.SetActive(true);
         else
             purple_selected.SetActive(false);
