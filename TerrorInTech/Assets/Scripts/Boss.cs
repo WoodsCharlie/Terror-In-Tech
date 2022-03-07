@@ -26,7 +26,8 @@ public class Boss : MonoBehaviour
         total_health = (PlayerPrefs.GetInt("wave count")/5 + 1) * 12;
         health = total_health;
         
-        shootCooldownTotal = 1;
+        //shoot cooldown is the inverse of the # boss fight it is times 2.5 (2.5 is ez first fight to learn mechanic)
+        shootCooldownTotal = 2.5f * 5f / (float)PlayerPrefs.GetInt("wave count");
         shootCooldown = shootCooldownTotal;
 
         Physics2D.IgnoreLayerCollision(14, 15);
