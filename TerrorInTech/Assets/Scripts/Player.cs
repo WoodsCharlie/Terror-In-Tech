@@ -107,19 +107,19 @@ public class Player : MonoBehaviour
         //reset to wave 1
         if (Input.GetKey(KeyCode.Alpha0))
         {
-            PlayerPrefs.SetInt("wave count", 0);
+            //PlayerPrefs.SetInt("wave count", 0);
         }
 
         //testing skip to boss fight
         if (Input.GetKey(KeyCode.Alpha8))
         {
-            PlayerPrefs.SetInt("wave count", 4);
+            //PlayerPrefs.SetInt("wave count", 4);
         }
 
         //testing skip to wave 11
         if (Input.GetKey(KeyCode.Alpha9))
         {
-            PlayerPrefs.SetInt("wave count", 10);
+            //PlayerPrefs.SetInt("wave count", 10);
         }
 
         // making player invincible for half a second if they are hit by an enemy

@@ -56,11 +56,11 @@ public class ShopControl : MonoBehaviour
             speedButton.interactable = true;
         else
             speedButton.interactable = false;
-        if (currency >= healthCost)
+        if (currency >= healthCost && PlayerPrefs.GetInt("total health") == PlayerPrefs.GetInt("health"))
             healthButton.interactable = true;
         else
             healthButton.interactable = false;
-        if (currency >= ianHealthCost)
+        if (currency >= ianHealthCost && PlayerPrefs.GetInt("total ianHealth") == PlayerPrefs.GetInt("ianHealth"))
             ianHealthButton.interactable = true;
         else
             ianHealthButton.interactable = false;
@@ -113,25 +113,25 @@ public class ShopControl : MonoBehaviour
     public void buyOrange()
     {
         currency -= 5;
-        PlayerPrefs.SetInt("orange", PlayerPrefs.GetInt("orange") + 20);
+        PlayerPrefs.SetInt("orange", PlayerPrefs.GetInt("orange") + 24);
     }
 
     public void buyYellow()
     {
         currency -= 20;
-        PlayerPrefs.SetInt("yellow", PlayerPrefs.GetInt("yellow") + 10);
+        PlayerPrefs.SetInt("yellow", PlayerPrefs.GetInt("yellow") + 24);
     }
 
     public void buyBlue()
     {
         currency -= 15;
-        PlayerPrefs.SetInt("blue", PlayerPrefs.GetInt("blue") + 10);
+        PlayerPrefs.SetInt("blue", PlayerPrefs.GetInt("blue") + 24);
     }
 
     public void buyPurple()
     {
         currency -= 10;
-        PlayerPrefs.SetInt("purple", PlayerPrefs.GetInt("purple") + 10);
+        PlayerPrefs.SetInt("purple", PlayerPrefs.GetInt("purple") + 24);
     }
 
     public void exitShop()
